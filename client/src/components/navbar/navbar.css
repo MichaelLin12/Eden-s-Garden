@@ -26,6 +26,7 @@
 .navbar{
     list-style-type: none;
     flex-grow: 2;
+    display: inline-block;
 }
 
 .navbar li{
@@ -44,4 +45,41 @@
     border-radius: 40%;
     background-color: transparent;
     cursor:pointer;
+    flex-grow: 1;
+}
+
+.hamburger{
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    display: none;
+}
+
+.hamburger:focus{
+    outline: none;
+}
+
+.parent{
+    display:flex;
+    flex-direction: column;
+}
+
+.menu{
+}
+
+
+@media screen and (max-width:800px){
+    nav ul{
+        display: none;
+    }
+
+    .hamburger{
+        display: block;
+    }
+
+    .logo{
+        flex-grow:100;
+    }
+
+
 }
