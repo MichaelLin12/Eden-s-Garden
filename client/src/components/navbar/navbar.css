@@ -1,0 +1,47 @@
+@font-face {
+    font-family: futura-links;
+    src: url('../../fonts/futura/Futura\ Book\ font.ttf');
+}
+
+@font-face {
+    font-family: futura-login;
+    src: url('../../fonts/futura/Futura\ Heavy\ font.ttf');
+}
+
+.header{
+    background-color: aqua;
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 2rem;
+}
+
+.logo{
+    cursor: pointer;
+    margin-left: 1%;
+    flex-grow: 1;
+}
+
+.navbar{
+    list-style-type: none;
+    flex-grow: 2;
+}
+
+.navbar li{
+    display: inline-block;
+    padding: 0% 1.5rem;
+    font-family: futura-links;
+}
+
+.navbar li:last-child{
+    float: right;
+}
+
+.login{
+    font-family: futura-login;
+    border-color: black;
+    border-radius: 40%;
+    background-color: transparent;
+    cursor:pointer;
+}
