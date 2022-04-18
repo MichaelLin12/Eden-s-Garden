@@ -1,10 +1,6 @@
 .footer{
-    background-color: #C8C8C8;
-}
-
-.bar{
-    background-color: #000000;
-    height:0.25rem
+    background-color: #964B00;
+    color:#ffffff;
 }
 
 .links{
@@ -25,15 +21,37 @@
 .list-one div{
     margin-left: 4rem;
     margin-top:0.4rem;
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.4rem;
 }
 
 .list-two{
     flex-grow:1;
-    background-color: orange;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.list-two div{
+    margin-left: 4rem;
+    margin-top:0.4rem;
+    margin-bottom: 0.4rem;
 }
 
 .list-three{
-    flex-grow:2;
-    background-color: violet;
+    flex-grow:1;
+    padding-left: 2rem;
+}
+
+.socials{
+    margin-top: 1.5rem;
+    width: fit-content;
+
+}
+
+.images{
+    width:fit-content;
+}
+
+.images span{
+    margin-left:1.5rem;
 }

@@ -20,28 +20,28 @@ export default function Navbar() {
       <span className='logo'><img src={logo} alt="Eden's Garden" height={50} width={50}/></span>
       <div className='hamburger'>
         <IconButton aria-label='login' onClick={handleClick} disableFocusRipple disableRipple>
-          <FontAwesomeIcon icon={faBars}/>
+          <FontAwesomeIcon icon={faBars} />
         </IconButton>
         <Popper id={id} open={open} anchorEl={anchorEl}>
           <Box sx={{ border: 1, p: 1, bgcolor: 'background.paper' }}>
             <div className='menu'>
-              <Link to='/store'>Store</Link>
-              <Link to='/learn'>Learn</Link>
-              <Link to='/events'>Events</Link>
-              <Link to='/support'>Support Us</Link>
-              <Link to='/contact'>Contact Us</Link>
-              <Link to='/login'>Login</Link>
+              <Link to='/store' style={{textDecoration:'none',color:'#ffffff'}}>Store</Link>
+              <Link to='/learn' style={{textDecoration:'none',color:'#ffffff'}}>Learn</Link>
+              <Link to='/events' style={{textDecoration:'none',color:'#ffffff'}}>Events</Link>
+              <Link to='/support' style={{textDecoration:'none',color:'#ffffff'}}>Support Us</Link>
+              <Link to='/contact' style={{textDecoration:'none',color:'#ffffff'}}>Contact Us</Link>
+              <Link to='/login' style={{textDecoration:'none'}}>Login</Link>
             </div>
           </Box>
         </Popper>
       </div>
       <nav className='navbar'>
         <ul>
-          <li><Link to='/store'>Store</Link></li>
-          <li><Link to='/learn'>Learn</Link></li>
-          <li><Link to='/events'>Events</Link></li>
-          <li><Link to='/support'>Suppport Us</Link></li>
-          <li><Link to='/contact'>Contact Us</Link></li>
+          <li><Link to='/store' style={{textDecoration:'none',color:'#ffffff'}}>Store</Link></li>
+          <li><Link to='/learn' style={{textDecoration:'none',color:'#ffffff'}}>Learn</Link></li>
+          <li><Link to='/events' style={{textDecoration:'none',color:'#ffffff'}}>Events</Link></li>
+          <li><Link to='/support' style={{textDecoration:'none',color:'#ffffff'}}>Suppport Us</Link></li>
+          <li><Link to='/contact' style={{textDecoration:'none',color:'#ffffff'}}>Contact Us</Link></li>
           <li><Link to='/login'><button className='login'><FontAwesomeIcon icon={faUser} size='lg' /></button></Link></li>
         </ul>
       </nav>
