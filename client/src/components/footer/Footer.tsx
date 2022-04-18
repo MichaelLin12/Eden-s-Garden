@@ -20,13 +20,13 @@ export default function Footer() {
                 <div><Link to={'/home'} style={{textDecoration:'none',color:'#ffffff'}}>Apply for Job</Link></div>
             </div>
             <div className='list-three'>
-                <h3>Stay up to date</h3>
-                <div className='form'>
-                    <input type={'email'} required/>
-                    <label>Email</label>
-                </div>
-                <button className='subscribe'>Subscribe</button>
+            <h3>Stay up to date</h3>
+            <div className='form'>
+                <input type={'email'} required/>
+                <label>Email</label>
             </div>
+            <button className='subscribe'>Subscribe</button>
+        </div>
         </div>
         <div className='socials'>
             <div className='images'>
