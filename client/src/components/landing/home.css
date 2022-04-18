@@ -1,0 +1,16 @@
+.landing{
+    overflow-x: hidden;
+    height: 100vh;
+    width: 100vw;
+}
+
+.nav{
+    position:fixed;
+}
+
+.space{
+    background-color: blue;
+    margin-top: 2rem;
+    height: calc(100vh - 2rem);
+    width: 100vw;
+}

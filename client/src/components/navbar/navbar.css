@@ -9,12 +9,14 @@
 }
 
 .header{
-    background-color: aqua;
+    background-color: white;
     margin-top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 2rem;
+    width: 100vw;
+    position:fixed;
 }
 
 .logo{
@@ -65,10 +67,12 @@
 }
 
 .menu{
+    display: flex;
+    flex-direction: column;
 }
 
 
-@media screen and (max-width:800px){
+@media screen and (max-width:767px){
     nav ul{
         display: none;
     }

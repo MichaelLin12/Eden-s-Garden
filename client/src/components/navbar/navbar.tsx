@@ -4,21 +4,36 @@ import {Link} from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faUser, faBars} from "@fortawesome/free-solid-svg-icons"
 import logo from '../../images/EdensGarden.png'
-import {Popover} from '@mui/material';
+import { IconButton, Popper, Box } from '@mui/material';
 
 
 export default function Navbar() {
-  const [displayHamburger, setDisplayHamburger] = useState(false);
+  const [anchorEl, setAnchorEl] = useState(null);
+  const handleClick = (event: { currentTarget: any; }) => {
+    setAnchorEl(anchorEl ? null : event.currentTarget);
+  };
+
+  const open = Boolean(anchorEl);
+  const id = open ? 'simple-popper' : undefined;
   return (
     <header className='header'>
       <span className='logo'><img src={logo} alt="Eden's Garden" height={50} width={50}/></span>
-      <div className='parent'>
-        <button className='hamburger' onClick={()=>{displayHamburger? setDisplayHamburger(false): setDisplayHamburger(true)}}>
+      <div className='hamburger'>
+        <IconButton aria-label='login' onClick={handleClick} disableFocusRipple disableRipple>
           <FontAwesomeIcon icon={faBars}/>
-        </button>
-        <div className='menu' style={{display: displayHamburger? 'block':'none'}}>
-          Hello
-        </div>
+        </IconButton>
+        <Popper id={id} open={open} anchorEl={anchorEl}>
+          <Box sx={{ border: 1, p: 1, bgcolor: 'background.paper' }}>
+            <div className='menu'>
+              <Link to='/store'>Store</Link>
+              <Link to='/learn'>Learn</Link>
+              <Link to='/events'>Events</Link>
+              <Link to='/support'>Support Us</Link>
+              <Link to='/contact'>Contact Us</Link>
+              <Link to='/login'>Login</Link>
+            </div>
+          </Box>
+        </Popper>
       </div>
       <nav className='navbar'>
         <ul>
