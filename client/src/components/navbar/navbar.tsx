@@ -2,9 +2,10 @@ import React,{useState} from 'react'
 import './navbar.css'
 import {Link} from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faUser, faBars} from "@fortawesome/free-solid-svg-icons"
+import {faBars} from "@fortawesome/free-solid-svg-icons"
 import logo from '../../images/EdensGarden.png'
 import { IconButton, Popper, Box } from '@mui/material';
+import { FaUserCircle} from 'react-icons/fa';
 
 
 export default function Navbar() {
@@ -19,18 +20,18 @@ export default function Navbar() {
     <header className='header'>
       <span className='logo'><img src={logo} alt="Eden's Garden" height={50} width={50}/></span>
       <div className='hamburger'>
-        <IconButton aria-label='login' onClick={handleClick} disableFocusRipple disableRipple>
+        <IconButton aria-label='login' onClick={handleClick} disableFocusRipple disableRipple sx={{color:'white'}}>
           <FontAwesomeIcon icon={faBars} />
         </IconButton>
         <Popper id={id} open={open} anchorEl={anchorEl}>
           <Box sx={{ border: 1, p: 1, bgcolor: 'background.paper' }}>
             <div className='menu'>
-              <Link to='/store' style={{textDecoration:'none',color:'#ffffff'}}>Store</Link>
-              <Link to='/learn' style={{textDecoration:'none',color:'#ffffff'}}>Learn</Link>
-              <Link to='/events' style={{textDecoration:'none',color:'#ffffff'}}>Events</Link>
-              <Link to='/support' style={{textDecoration:'none',color:'#ffffff'}}>Support Us</Link>
-              <Link to='/contact' style={{textDecoration:'none',color:'#ffffff'}}>Contact Us</Link>
-              <Link to='/login' style={{textDecoration:'none'}}>Login</Link>
+              <Link to='/store' style={{textDecoration:'none',color:'#6290c8'}}>Store</Link>
+              <Link to='/learn' style={{textDecoration:'none',color:'#6290c8'}}>Learn</Link>
+              <Link to='/events' style={{textDecoration:'none',color:'#6290c8'}}>Events</Link>
+              <Link to='/support' style={{textDecoration:'none',color:'#6290c8'}}>Support Us</Link>
+              <Link to='/contact' style={{textDecoration:'none',color:'#6290c8'}}>Contact Us</Link>
+              <Link to='/login' style={{textDecoration:'none',color:'#6290c8'}}>Login</Link>
             </div>
           </Box>
         </Popper>
@@ -42,7 +43,7 @@ export default function Navbar() {
           <li><Link to='/events' style={{textDecoration:'none',color:'#ffffff'}}>Events</Link></li>
           <li><Link to='/support' style={{textDecoration:'none',color:'#ffffff'}}>Suppport Us</Link></li>
           <li><Link to='/contact' style={{textDecoration:'none',color:'#ffffff'}}>Contact Us</Link></li>
-          <li><Link to='/login'><button className='login'><FontAwesomeIcon icon={faUser} size='lg' /></button></Link></li>
+          <li><Link to='/login'><button className='login'><FaUserCircle size={20}/></button></Link></li>
         </ul>
       </nav>
     </header>

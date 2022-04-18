@@ -1,3 +1,13 @@
+@font-face {
+    font-family: futura-links;
+    src: url('../../fonts/futura/Futura\ Book\ font.ttf');
+}
+
+@font-face {
+    font-family: futura-sub-header;
+    src: url('../../fonts/futura/Futura\ Extra\ Black\ font.ttf');
+}
+
 .footer{
     background-color: #964B00;
     color:#ffffff;
@@ -22,6 +32,7 @@
     margin-left: 4rem;
     margin-top:0.4rem;
     margin-bottom: 0.4rem;
+    font-family: futura-links;
 }
 
 .list-two{
@@ -29,6 +40,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    font-family: futura-links;
 }
 
 .list-two div{
@@ -40,6 +52,10 @@
 .list-three{
     flex-grow:1;
     padding-left: 2rem;
+}
+
+.list-three h3{
+    font-family:futura-sub-header;
 }
 
 .socials{
@@ -54,4 +70,39 @@
 
 .images span{
     margin-left:1.5rem;
+}
+
+.form{
+    position: relative;
+}
+
+.form input[type=email]{
+    outline: none;
+    background-color: transparent;
+    border: none;
+    padding-top: 1rem;
+    color: #ffffff;
+}
+
+.form label{
+    position:absolute;
+    left:0rem;
+    bottom:0rem;
+    border-bottom: 1px solid white;
+    width: 10rem;
+    pointer-events: none;
+    font-family: futura-links;
+}
+
+.subscribe{
+    margin-top: 1rem;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding-left: 3rem;
+    padding-right:3rem;
+    padding-top: 0.2rem;
+    padding-bottom:0.2rem;
+    border-radius: 12px;
+    font-family: futura-links;
 }

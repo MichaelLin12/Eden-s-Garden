@@ -21,10 +21,11 @@ export default function Footer() {
             </div>
             <div className='list-three'>
                 <h3>Stay up to date</h3>
-                <form>
-                    <input type={'text'}></input><br/><br/>
-                    <input type={'button'}></input>
-                </form>
+                <div className='form'>
+                    <input type={'email'} required/>
+                    <label>Email</label>
+                </div>
+                <button className='subscribe'>Subscribe</button>
             </div>
         </div>
         <div className='socials'>
