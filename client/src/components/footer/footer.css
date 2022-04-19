@@ -16,7 +16,13 @@
     justify-content: space-around;
     align-items: flex-start;
     flex-wrap: wrap;
+    overflow: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
 
+.footer::-webkit-scrollbar{
+    display:none
 }
 
 .links{
