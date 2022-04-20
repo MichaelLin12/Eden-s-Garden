@@ -23,7 +23,7 @@ export default function Footer() {
             <h3>Stay up to date</h3>
             <label className="form">
                 <input type="email" placeholder="&nbsp;"/>
-                <span className="placeholder">Enter Email</span>
+                <span className="placeholder">Email</span>
             </label><br/>
             <button className='subscribe'>Subscribe</button>
         </div>

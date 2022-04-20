@@ -134,9 +134,9 @@
 
 .form input:not(:placeholder-shown) + .placeholder
 .form input:focus + .placeholder {
-  top: -14px;
-  font-size: 10px;
-  color: white;
+    top: -14px;
+    font-size: 10px;
+    color: white;
 }
 
 

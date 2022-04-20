@@ -11,7 +11,18 @@ export default function Login() {
               Welcome Back
           </div>
           <div className='input-l'>
-            Hello
+            <label className="custom">
+                <input type="email" placeholder="&nbsp;"/>
+                <span className="label">Email</span>
+            </label>
+            <div className='empty'/>
+            <label className="custom">
+                <input type="password" placeholder="&nbsp;"/>
+                <span className="label">Password</span>
+            </label><br/>
+            <div className='empty2'>
+              <button className='initialize'>Login</button>
+            </div>
           </div>
         </div>
         <div className='item2'>
@@ -19,7 +30,23 @@ export default function Login() {
             Hello
           </div>
           <div className='input-s'>
-            Time is ass
+            <label className="custom">
+                <input type="email" placeholder="&nbsp;"/>
+                <span className="label">Email</span>
+            </label>
+            <div className='empty3'/>
+            <label className="custom">
+                <input type="password" placeholder="&nbsp;"/>
+                <span className="label">Password</span>
+            </label>
+            <div className='empty3'/>
+            <label className="custom">
+                <input type="password" placeholder="&nbsp;"/>
+                <span className="label">Confirm Password</span>
+            </label><br/>
+            <div className='empty4'>
+              <button className='initialize'>Login</button>
+            </div>
           </div>
         </div>
       </Paper>
