@@ -1,0 +1,39 @@
+@font-face {
+    font-family: futura-title;
+    src: url('../../fonts/futura/Futura\ Bold\ font.ttf');
+}
+
+@font-face {
+    font-family: futura-content;
+    src: url('../../fonts/futura/Futura\ Light\ font.ttf');
+}
+
+.bar{
+    position:fixed;
+}
+
+.overlay{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+}
+
+.content{
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+    height: fit-content;
+    width: 60%;
+}
+
+h1{
+    padding-top: 1rem;
+    font-family: futura-title;
+    font-size: 48px;
+    padding-bottom: 1rem;
+}
+
+p{
+    font-family: futura-content;
+    font-size: 24px;
+}
