@@ -54,7 +54,7 @@ export default function Learn() {
 
                     Laboris aliquip nostrud anim commodo. Irure est minim commodo velit. Veniam sunt commodo ea velit mollit culpa ut amet aute laborum voluptate cupidatat nulla.
                 </p>
-                <h1>How Are We Achieving This</h1>
+                <h1>Our Work</h1>
                 <p>
                     Velit aliquip dolor veniam fugiat dolore minim eiusmod velit non nulla. Fugiat nostrud laboris laborum irure cupidatat dolore. Incididunt ut esse id pariatur ex consequat aute proident. Occaecat deserunt est enim nostrud. Eu adipisicing fugiat culpa nostrud nulla sunt occaecat consequat aliqua exercitation. Eu amet ullamco dolor eu elit in.<br/><br/>
 
