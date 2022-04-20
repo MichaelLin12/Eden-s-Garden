@@ -45,7 +45,7 @@ export default function Login() {
                 <span className="label">Confirm Password</span>
             </label><br/>
             <div className='empty4'>
-              <button className='initialize'>Login</button>
+              <button className='initialize'>Sign Up</button>
             </div>
           </div>
         </div>
