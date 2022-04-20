@@ -1,3 +1,8 @@
+@font-face {
+    font-family: futura-content;
+    src: url('../../fonts/futura/Futura\ Light\ font.ttf');
+}
+
 .top{
     position:fixed;
 }
@@ -9,7 +14,7 @@
     background-color: white;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows:10rem calc(100vh - 2rem - 10rem);
+    grid-template-rows:9rem calc(100vh - 2rem - 9rem);
 }
 
 .sub{
@@ -26,6 +31,22 @@
     text-align: center;
     color: #223b05;
 }
+
+.big{
+    font-family: futura-title;
+    font-size: 36px;
+}
+
+.medium{
+    font-family: futura-content;
+    font-size: 18px;
+}
+
+.small{
+    font-family: futura-content;
+    font-size: 12px;
+}
+
 .sub div hr{
     border-top: 3px solid #223b05;
     border-radius: 8px;
@@ -39,7 +60,7 @@
 }
 
 .email{
-    flex-grow: 2;
+    flex-grow: 0.5;
     background-color: transparent;
     display: flex;
     justify-content: center;
@@ -55,6 +76,103 @@
     color: #223b05;
 }
 
+.beam {
+    font-size: 14px;
+    position: relative;
+    border-top: 20px solid transparent;
+    font-family: futura-content;
+}
+
+.beam input {
+    border: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #E6E6E3;
+    width: 21.5rem;
+    font-size: 14px;
+    outline: none;
+    color: #223b05;
+    font-family: futura-content;
+}
+
+.beam .name {
+    position: absolute;
+    left: 1px;
+    top: 1px;
+    width: calc(100% - 24px);  
+    color: #223b05;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    transition: 
+    top 0.3s ease,
+    color 0.3s ease,
+    font-size 0.3s ease;
+}
+
+.beam input:focus + .name {
+    top: -14px;
+    font-size: 10px;
+    color: #223b05;
+}
+
+.beam input:not(:placeholder-shown) + .name {
+    top: -14px;
+    font-size: 10px;
+    color: #223b05;
+    font-family: futura-content;
+}
+
+.beam input:not(:placeholder-shown) + .name
+.beam input:focus + .name {
+    top: -14px;
+    font-size: 10px;
+    color: #223b05;
+    font-family: futura-content;
+}
+
+.textarea{
+    background-color: #E6E6E3;
+    outline: none;
+    border: none;
+    width: 19.2rem;
+    height: 9rem;
+    padding: 12px 20px;
+    resize: none;
+    font-family: futura-content;
+    font-size: 18px;
+}
+
+.send{
+    background-color: transparent;
+    outline: none;
+    border: 2px solid #223b05;
+    border-radius: 8px;
+    color:#223b05;
+    padding: 0.2rem 4.5rem 0.2rem 4.5rem;
+    font-family: futura-content;
+    font-size: 18px;
+}
+
 .other{
     flex-grow: 1;
+}
+
+.other ul{
+    margin-top: 7rem;
+}
+
+.other ul li{
+    display: block;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: #223b05;
+    font-family: futura-content;
+    font-size: 18px;
+}
+
+.other ul li:last-child span{
+    margin-right: 0.7rem;
 }
