@@ -1,0 +1,47 @@
+@font-face {
+    font-family: futura-title;
+    src: url('../../fonts/futura/Futura\ Bold\ font.ttf');
+}
+
+.display{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    height: 100vh;
+    width: 100vw;
+}
+
+.item1{
+    background-color: #6290c8;
+}
+
+.title-l{
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 48px;
+    font-family: futura-title;
+    color: white;
+}
+
+.input-l{
+    background-color: red;
+    margin-top: 4rem;
+}
+
+.item2{
+    background-color: #AADA81;
+}
+
+.input-s{
+    background-color: blue;
+    margin-top: 4rem;
+}
+
+.title-s{
+    margin-top:1rem;
+    text-align: center;
+    font-size: 48px;
+    font-family: futura-title;
+    color: white;
+}

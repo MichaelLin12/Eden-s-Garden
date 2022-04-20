@@ -1,3 +1,8 @@
+@font-face {
+    font-family: futura-title;
+    src: url('../../fonts/futura/Futura\ Bold\ font.ttf');
+}
+
 .landing{
     overflow-x: hidden;
     height: 100vh;
@@ -13,4 +18,84 @@
     margin-top: 2rem;
     height: calc(100vh - 2rem);
     width: 100vw;
+    display:flex;
+    flex-direction:row;
+}
+
+.first{
+    flex-grow:4;
+    background-color: white;
+    display:flex;
+    flex-direction: row;
+}
+
+.first-first{
+    flex-grow:0.8;
+    display: flex;
+    justify-content: flex-end;
+    align-items:center;
+}
+
+.first-second{
+    flex-grow:1;
+}
+
+.title{
+    height: 12rem;
+    width: fit-content;
+    display:flex;
+    flex-direction: column;
+}
+
+.title1{
+    font-size: 48px;
+    font-family: futura-title;
+    height: fit-content;
+    color: #223b05;
+}
+
+.subtitle{
+    margin-top: 0.5rem;
+    margin-left:0.2rem;
+    color: #384e1d;
+}
+
+.calltoaction{
+    margin-top:1rem;
+    display:flex;
+    justify-content: center;
+}
+
+.action{
+    background-color: transparent;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border: 3px solid #223b05;
+    border-radius: 12px;
+    color: #223b05;
+}
+
+.second{
+    flex-grow: 1;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.twice{
+    grid-column: 1 / span 2;
+}
+
+.rounded{
+    border-radius: 8px;
+}
+
+@media screen and (max-width:767px){
+    .space{
+        display:flex;
+        flex-direction:column;
+    }
 }
