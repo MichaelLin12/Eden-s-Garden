@@ -31,7 +31,7 @@ export default function Home() {
               <div className='first-second'></div>
             </div>
             <div className='second'>
-              <Paper elevation={5} sx={{height:'fit-content',width:'fit-content',backgroundColor:'#AADA81',padding:'0.5rem',borderRadius:'8px',display:'grid',gridTemplateColumns:'auto auto', gap:'0.2rem'}}>
+              <Paper elevation={5} sx={{height:'fit-content',width:'fit-content',backgroundColor:'#223b05',padding:'0.5rem',borderRadius:'8px',display:'grid',gridTemplateColumns:'auto auto', gap:'0.2rem'}}>
                 <div><img src={img1} alt='charity' className='rounded' height={125}/></div>
                 <div><img src={img2} alt='charity' className='rounded' height={125}/></div>
                 <div className='twice'><img src={img3} alt='charity' className='rounded' height={250}/></div>

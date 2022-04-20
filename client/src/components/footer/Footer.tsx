@@ -14,7 +14,7 @@ export default function Footer() {
                 <div><Link to={'/home'} style={{textDecoration:'none',color:'#ffffff'}}>Our Mission</Link></div>
             </div>
             <div className='list-two'>
-                <div><Link to={'/home'} style={{textDecoration:'none',color:'#ffffff'}}>Learn More</Link></div>
+                <div><Link to={'/home'} style={{textDecoration:'none',color:'#ffffff'}}>Our Work</Link></div>
                 <div><Link to={'/home'} style={{textDecoration:'none',color:'#ffffff'}}>Volunteer</Link></div>
                 <div><Link to={'/home'} style={{textDecoration:'none',color:'#ffffff'}}>Intern</Link></div>
                 <div><Link to={'/home'} style={{textDecoration:'none',color:'#ffffff'}}>Apply for Job</Link></div>

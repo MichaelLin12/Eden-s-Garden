@@ -60,7 +60,7 @@
 }
 
 .email{
-    flex-grow: 0.5;
+    flex-grow: 1;
     background-color: transparent;
     display: flex;
     justify-content: center;
@@ -106,40 +106,15 @@
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    transition: 
-    top 0.3s ease,
-    color 0.3s ease,
-    font-size 0.3s ease;
-}
-
-.beam input:focus + .name {
-    top: -14px;
-    font-size: 10px;
-    color: #223b05;
-}
-
-.beam input:not(:placeholder-shown) + .name {
-    top: -14px;
-    font-size: 10px;
-    color: #223b05;
-    font-family: futura-content;
-}
-
-.beam input:not(:placeholder-shown) + .name
-.beam input:focus + .name {
-    top: -14px;
-    font-size: 10px;
-    color: #223b05;
-    font-family: futura-content;
 }
 
 .textarea{
     background-color: #E6E6E3;
     outline: none;
     border: none;
-    width: 19.2rem;
+    width: 21.3rem;
     height: 9rem;
-    padding: 12px 20px;
+    padding: 6px 3px;
     resize: none;
     font-family: futura-content;
     font-size: 18px;

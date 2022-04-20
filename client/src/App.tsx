@@ -3,6 +3,7 @@ import Home from './components/landing/Home'
 import Login from './components/login/Login'
 import Learn from './components/learn/learn'
 import Contact from './components/contact/Contact';
+import Support from './components/support/support';
 import {Routes,Route} from 'react-router-dom'
 
 
@@ -14,6 +15,7 @@ function App() {
         <Route path='/login' element={<Login/>}/>
         <Route path='/learn' element={<Learn/>}/>
         <Route path='/contact' element={<Contact/>}/>
+        <Route path='/support' element={<Support/>}/>
       </Routes>
     </div>
   );

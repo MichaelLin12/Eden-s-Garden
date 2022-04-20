@@ -23,14 +23,14 @@ export default function Contact() {
                 <div className='email'>
                     <div>
                         <label className='beam'>
-                            <input type='text' placeholder='&nbsp;'/>
-                            <span className='name'>Name</span>
+                            <input type='text' placeholder='Name'/>
                         </label><br/><br/>
                         <label className='beam'>
-                            <input type='email' placeholder='&nbsp;'/>
-                            <span className='name'>Email</span>
+                            <input type='email' placeholder='Email'/>
                         </label><br/><br/>
-                        <textarea className='textarea' placeholder='content'></textarea><br/>
+                        <label>
+                            <textarea className='textarea' placeholder='Content'></textarea>
+                        </label><br/>
                         <button className='send'>Send</button>
                     </div>
                 </div>
