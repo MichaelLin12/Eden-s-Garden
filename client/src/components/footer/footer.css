@@ -85,27 +85,60 @@
     margin-left:1.5rem;
 }
 
-.form{
+.form {
+    font-size: 14px;
     position: relative;
+    border-top: 20px solid transparent;
 }
 
-.form input[type=email]{
-    outline: none;
-    background-color: transparent;
+.form input {
     border: none;
-    padding-top: 1rem;
-    color: #ffffff;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: transparent;
+    border-bottom: 2px solid white;
+    width: 200px;
+    font-size: 14px;
+    outline: none;
+    color: white;
 }
 
-.form label{
-    position:absolute;
-    left:0rem;
-    bottom:0rem;
-    border-bottom: 1px solid white;
-    width: 10rem;
-    pointer-events: none;
-    font-family: futura-links;
+.form .placeholder {
+    position: absolute;
+    left: 1px;
+    top: 1px;
+    width: calc(100% - 24px);  
+    color: white;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    transition: 
+    top 0.3s ease,
+    color 0.3s ease,
+    font-size 0.3s ease;
 }
+
+.form input:focus + .placeholder {
+    top: -14px;
+    font-size: 12px;
+    color: #FFFFFF;
+}
+
+input:not(:placeholder-shown) + .placeholder {
+    top: -14px;
+    font-size: 12px;
+    color: #FFFFFF;
+}
+
+.form input:not(:placeholder-shown) + .placeholder
+.form input:focus + .placeholder {
+  top: -14px;
+  font-size: 12px;
+  color: white;
+}
+
 
 .subscribe{
     margin-top: 1rem;
