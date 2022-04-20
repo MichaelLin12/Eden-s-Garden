@@ -1,6 +1,6 @@
 import React from 'react'
 import './footer.css'
-import { FaTwitter,FaSnapchat,FaFacebook,FaInstagram,FaYoutube } from 'react-icons/fa';
+import { FaTwitter,FaSnapchat,FaFacebook,FaInstagram,FaYoutube,FaLinkedin } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 export default function Footer() {
@@ -35,6 +35,7 @@ export default function Footer() {
                 <span><FaInstagram size={28}/></span>
                 <span><FaFacebook size={28}/></span>
                 <span><FaYoutube size={28}/></span>
+                <span><FaLinkedin size={28}/></span>
             </div>
         </div>
     </div>

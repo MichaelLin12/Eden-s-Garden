@@ -1,0 +1,60 @@
+.top{
+    position:fixed;
+}
+
+.contact{
+    padding-top: 2rem;
+    width: 100vw;
+    height: calc(100vh - 2rem);
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:10rem calc(100vh - 2rem - 10rem);
+}
+
+.sub{
+    padding-top: 1rem;
+    color: #223b05;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub div{
+    height: 100%;
+    width: 85%;
+    text-align: center;
+    color: #223b05;
+}
+.sub div hr{
+    border-top: 3px solid #223b05;
+    border-radius: 8px;
+}
+
+
+.body{
+    color: #223b05;
+    display: flex;
+    flex-direction: row;
+}
+
+.email{
+    flex-grow: 2;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.email div{
+    background-color: transparent;
+    width: fit-content;
+    height: fit-content;
+    padding: 2rem;
+    border: 8px solid #223b05;
+    color: #223b05;
+}
+
+.other{
+    flex-grow: 1;
+}
