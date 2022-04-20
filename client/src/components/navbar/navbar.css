@@ -23,8 +23,13 @@
 
 .logo{
     cursor: pointer;
+    background-color: transparent;
     margin-left: 1%;
     flex-grow: 1;
+    outline: none;
+    border: none;
+    width: fit-content;
+    height: fit-content;
 }
 
 .navbar{

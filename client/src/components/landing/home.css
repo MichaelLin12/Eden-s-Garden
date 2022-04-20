@@ -3,6 +3,11 @@
     src: url('../../fonts/futura/Futura\ Bold\ font.ttf');
 }
 
+@font-face {
+    font-family: futura-button;
+    src: url('../../fonts/futura/Futura\ Bold\ font.ttf');
+}
+
 .landing{
     overflow-x: hidden;
     height: 100vh;
@@ -75,6 +80,8 @@
     border: 3px solid #223b05;
     border-radius: 12px;
     color: #223b05;
+    font-family: futura-button;
+    font-size: 18px;
 }
 
 .second{

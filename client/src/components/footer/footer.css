@@ -122,20 +122,20 @@
 
 .form input:focus + .placeholder {
     top: -14px;
-    font-size: 12px;
+    font-size: 10px;
     color: #FFFFFF;
 }
 
-input:not(:placeholder-shown) + .placeholder {
+.form input:not(:placeholder-shown) + .placeholder {
     top: -14px;
-    font-size: 12px;
+    font-size: 10px;
     color: #FFFFFF;
 }
 
 .form input:not(:placeholder-shown) + .placeholder
 .form input:focus + .placeholder {
   top: -14px;
-  font-size: 12px;
+  font-size: 10px;
   color: white;
 }
 

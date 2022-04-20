@@ -18,7 +18,7 @@ export default function Navbar() {
   const id = open ? 'simple-popper' : undefined;
   return (
     <header className='header'>
-      <span className='logo'><img src={logo} alt="Eden's Garden" height={50} width={50}/></span>
+      <Link to='/' className='logo'><img src={logo} alt="Eden's Garden" height={50} width={50}/></Link>
       <div className='hamburger'>
         <IconButton aria-label='login' onClick={handleClick} disableFocusRipple disableRipple sx={{color:'white'}}>
           <FontAwesomeIcon icon={faBars} />
