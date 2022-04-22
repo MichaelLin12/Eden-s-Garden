@@ -1,13 +1,14 @@
 import React from 'react'
 import './sidebar.css'
+import { Link } from 'react-router-dom'
 
 export default function Sidebar(props:{handleClick:Function}) {
   return (
-    <div className='items'>
-        <button value={'Donate'} onClick={(e)=>{props.handleClick(e)}}>Donate</button>
-        <button value={'Volunteer'} onClick={(e)=>{props.handleClick(e)}}>Volunteer</button>
-        <button value={'Internship'} onClick={(e)=>{props.handleClick(e)}}>Apply for Internship</button>
-        <button value={'Job'} onClick={(e)=>{props.handleClick(e)}}>Apply for Job</button>
+    <div className="sidebar">
+      <Link to="#" onClick={(e)=>{props.handleClick(e)}}>Donate</Link>
+      <Link to="#" onClick={(e)=>{props.handleClick(e)}}>Volunteer</Link>
+      <Link to="#" onClick={(e)=>{props.handleClick(e)}}>Contact</Link>
+      <Link to="#" onClick={(e)=>{props.handleClick(e)}}>About</Link>
     </div>
   )
 }

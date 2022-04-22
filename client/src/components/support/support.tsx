@@ -12,10 +12,10 @@ export default function Support() {
         <Navbar/>
       </div>
       <div className='support'>
-        <div className='sidebar'>
-          <Sidebar handleClick={(e:any)=>{console.log(e.target.value)}}/>
+        <div className='ele1'>
+          <Sidebar handleClick={(e:any)=>{console.log(e.target)}}/>
         </div>
-        <div className='page'>
+        <div className='ele2'>
           Hello
         </div>
       </div>

@@ -3,28 +3,53 @@
     src: url('../../fonts/futura/Futura\ Book\ font.ttf');
 }
 
-.items{
+/* The side navigation menu */
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
     background-color: transparent;
-    margin-top: 4rem;
-    height: fit-content;
-    width: 100%;
-    background-color: transparent;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    color: #223b05;
+    overflow: auto;
+    height: 100%;
+    border-right: 2px solid #223b05;
 }
 
-.items button{
-    border:none;
-    background-color: transparent;
-    border:none;
-    padding: 1rem 0rem 1rem 0rem;
+/* Sidebar links */
+.sidebar a {
+    display: block;
     color: #223b05;
-    font-family: futura-links;
-    font-size: 16px;
+    padding: 16px;
+    text-decoration: none;
 }
 
-.items button:hover{
-    background-color: #6290c8;
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+    background-color: #223b05;
+    color: white;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+}
+
+/* On screens that are less than 767px wide, make the sidebar into a topbar */
+@media screen and (max-width: 767px) {
+    .sidebar {
+        width: fit-content;
+        height: 100%;
+        position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+    .sidebar a {
+        text-align: center;
+        float: none;
+    }
 }

@@ -10,13 +10,21 @@
     flex-direction: row;
 }
 
-.sidebar{
-    height: 100%;
-    width: 15vw;
-    border-right: 2px solid #223b05;
-}
+@media screen and (max-width: 767px){
+    .support{
+        display:flex;
+        flex-direction: column;
+    }
 
-.page{
-    background-color: azure;
-    width: calc(100vw - 15vw);
+    .support div{
+        width: 100vw;
+    }
+
+    .ele1{
+        height: 3rem;
+    }
+    
+    .ele2{
+        height: calc(100vh - 2rem - 3rem);
+    }
 }
