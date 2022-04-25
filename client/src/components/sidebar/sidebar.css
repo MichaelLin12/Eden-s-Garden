@@ -40,10 +40,22 @@ div.content {
     .sidebar {
         width: fit-content;
         height: 100%;
-        position: relative;
+        background-color:#223b05;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
     }
-    .sidebar a {float: left;}
+    .sidebar a {
+        background-color: transparent;
+        color: white;
+    }
     div.content {margin-left: 0;}
+    /* Links on mouse-over */
+    .sidebar a:hover:not(.active) {
+        background-color: #223b05;
+        color: white;
+        border-bottom: 3px solid #6290c8;
+    }
 }
 
 /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
