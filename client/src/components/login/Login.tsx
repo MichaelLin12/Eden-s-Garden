@@ -5,7 +5,7 @@ import { Paper } from '@mui/material'
 export default function Login() {
   return (
     <div className='display'>
-      <Paper elevation={3} sx={{height:'28rem',width:'45rem',display:'grid',gridTemplateColumns:'1fr 1fr'}}>
+      <div className='paper'>
         <div className='item1'>
           <div className='title-l'>
               Welcome Back
@@ -49,7 +49,7 @@ export default function Login() {
             </div>
           </div>
         </div>
-      </Paper>
+      </div>
     </div>
   )
 }

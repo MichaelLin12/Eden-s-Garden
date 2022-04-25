@@ -12,6 +12,14 @@
     width: 100vw;
 }
 
+.paper{
+    height: 28rem;
+    width: 45rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
 .item1{
     background-color: #6290c8;
 }
@@ -135,4 +143,56 @@
     border-radius: 8px;
     padding: 0.2rem 5.1rem 0.2rem 5.1rem;
     color: white;
+}
+
+@media screen and (max-width:767px){
+    .paper{
+        display:grid;
+        grid-template-columns: 1fr;
+        height: 28rem;
+        width: 28rem;
+    }
+
+    .item2{
+        display:none;
+        visibility: none;
+    }
+
+    .item1{
+        background-color: #6290c8;
+    }
+
+    .title-l{
+        margin-top:1rem;
+        text-align: center;
+        font-size: 48px;
+        font-family: futura-title;
+        color: white;
+    }
+
+    .input-l{
+        margin-top: 5rem;
+        margin-left: 8rem;
+        background-color: transparent;
+    }
+    
+    .empty{
+        height: 3rem;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:400px){
+    .paper{
+        display:grid;
+        grid-template-columns: 1fr;
+        height: 28rem;
+        width: 14rem;
+    }
+
+    .input-l{
+        margin-top: 5rem;
+        margin-left: 6rem;
+        background-color: transparent;
+    }
 }
