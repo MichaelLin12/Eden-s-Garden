@@ -1,0 +1,96 @@
+@font-face {
+    font-family: futura-title;
+    src: url('../../fonts/futura/Futura\ Heavy\ font.ttf');
+}
+
+.nav{
+    position: fixed;
+}
+
+.events{
+    padding-top: 2.5rem;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+}
+
+.searchbar{
+    background-color: transparent;
+    outline: none;
+    border: 2px solid #223b05;
+    border-radius: 16px;
+    padding: 0.75rem 0rem 0.75rem 1.5rem;
+    color: #223b05;
+    text-align: left;
+    width: 35%;
+}
+
+.space1{
+    width: 100vw;
+    height: 2.25rem;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 3rem;
+}
+
+.grid{
+    width: 85%;
+    height: fit-content;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5rem;
+    row-gap: 4rem;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width:1200px) {
+    .grid{
+        width: 85%;
+        height: fit-content;
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 5rem;
+        row-gap: 4rem;
+        align-items: center;
+        justify-content: center;
+    }
+    .searchbar{
+        background-color: transparent;
+        outline: none;
+        border: 2px solid #223b05;
+        border-radius: 16px;
+        padding: 0.75rem 0rem 0.75rem 1.5rem;
+        color: #223b05;
+        text-align: left;
+        width: 45%;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .grid{
+        width: 85%;
+        height: fit-content;
+        display:grid;
+        grid-template-columns: auto;
+        column-gap: 5rem;
+        row-gap: 4rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .searchbar{
+        background-color: transparent;
+        outline: none;
+        border: 2px solid #223b05;
+        border-radius: 16px;
+        padding: 0.75rem 0rem 0.75rem 1.5rem;
+        color: #223b05;
+        text-align: left;
+        width: 50%;
+    }
+}
