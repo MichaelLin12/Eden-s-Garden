@@ -1,6 +1,6 @@
 @font-face {
-    font-family: futura-title;
-    src: url('../../fonts/futura/Futura\ Heavy\ font.ttf');
+    font-family: futura-text;
+    src: url('../../fonts/futura/Futura\ Light\ font.ttf');
 }
 
 .nav{
@@ -24,6 +24,8 @@
     color: #223b05;
     text-align: left;
     width: 35%;
+    font-family: futura-text;
+    font-size: 16px;
 }
 
 .space1{
@@ -68,6 +70,8 @@
         color: #223b05;
         text-align: left;
         width: 45%;
+        font-family: futura-text;
+        font-size: 16px;
     }
 }
 
@@ -92,5 +96,7 @@
         color: #223b05;
         text-align: left;
         width: 50%;
+        font-family: futura-text;
+        font-size: 16px;
     }
 }

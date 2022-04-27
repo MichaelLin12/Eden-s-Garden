@@ -20,6 +20,8 @@
     color: #223b05;
     padding: 16px;
     text-decoration: none;
+    font-family:futura-links;
+    font-size: 18px;
 }
 
 
@@ -27,6 +29,8 @@
 .sidebar a:hover:not(.active) {
     background-color: #223b05;
     color: white;
+    font-family:futura-links;
+    font-size: 18px;
 }
 
 /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
@@ -48,6 +52,8 @@ div.content {
     .sidebar a {
         background-color: transparent;
         color: white;
+        font-family:futura-links;
+        font-size: 18px;
     }
     div.content {margin-left: 0;}
     /* Links on mouse-over */
@@ -55,6 +61,8 @@ div.content {
         background-color: #223b05;
         color: white;
         border-bottom: 3px solid #6290c8;
+        font-family:futura-links;
+        font-size: 18px;
     }
 }
 
@@ -63,5 +71,7 @@ div.content {
     .sidebar a {
         text-align: center;
         float: none;
+        font-family:futura-links;
+        font-size: 18px;
     }
 }

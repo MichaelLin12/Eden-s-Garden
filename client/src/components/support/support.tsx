@@ -3,6 +3,10 @@ import './support.css'
 import Navbar from '../navbar/navbar'
 import Footer from '../footer/Footer'
 import Sidebar from '../sidebar/sidebar'
+import Donate from '../donate/Donate'
+import Volunteer from '../volunteer/Volunteer'
+import Intern from '../intern/Intern'
+import Job from '../job/Job'
 
 export default function Support() {
   const [page, setPage]:[String,Function] = useState('Donate');
@@ -20,6 +24,18 @@ export default function Support() {
     }
   }
 
+  const view = ()=>{
+    if(page === 'Donate'){
+      return <Donate/>
+    }else if(page === 'Volunteer'){
+      return <Volunteer/>
+    }else if(page === 'Internship'){
+      return <Intern/>
+    }else if(page === 'Job'){
+      return <Job/>
+    }
+  }
+
   return (
     <div>
       <div className='nav'>
@@ -30,7 +46,7 @@ export default function Support() {
           <Sidebar handleClick={(e:any)=>{onClick(e)}}/>
         </div>
         <div className='ele2'>
-          Hello
+          {view()}
         </div>
       </div>
       <div>
