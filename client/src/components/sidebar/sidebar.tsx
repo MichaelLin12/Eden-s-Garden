@@ -7,8 +7,8 @@ export default function Sidebar(props:{handleClick:Function}) {
     <div className="sidebar">
       <Link to="#" onClick={(e)=>{props.handleClick(e)}}>Donate</Link>
       <Link to="#" onClick={(e)=>{props.handleClick(e)}}>Volunteer</Link>
-      <Link to="#" onClick={(e)=>{props.handleClick(e)}}>Contact</Link>
-      <Link to="#" onClick={(e)=>{props.handleClick(e)}}>About</Link>
+      <Link to="#" onClick={(e)=>{props.handleClick(e)}}>Apply for Internship</Link>
+      <Link to="#" onClick={(e)=>{props.handleClick(e)}}>Apply for Job</Link>
     </div>
   )
 }
