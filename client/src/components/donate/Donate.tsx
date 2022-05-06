@@ -1,6 +1,7 @@
 import React from 'react'
 import './donate.css'
 import img1 from '../../images/istockphoto-471500478-612x612.jpg'
+import { FaDollarSign } from 'react-icons/fa'
 
 export default function Donate() {
   return (
@@ -20,6 +21,19 @@ export default function Donate() {
             <button>$20</button>
             <button>$50</button>
             <button>$100</button>
+          </div>
+          <div className='donate-other'>
+            <label className="donate-form">
+              <FaDollarSign className='donate-form-icon'/>
+              <input type="number" placeholder="&nbsp;"/>
+              <span className="donate-placeholder">Other</span>
+            </label>
+          </div>
+          <div className='donate-thank-you'>
+            Thank you for contributing to our cause. At Eden's Garden, we believe that all donations, no matter how big or small, are crucial. Thus, we really appreciate your kindness and support in helping to fill empty bellies. 
+          </div>
+          <div className='donate-final-button'>
+            <button>Donate</button>
           </div>
         </div>
       </div>

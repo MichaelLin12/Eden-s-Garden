@@ -1,3 +1,17 @@
+@font-face {
+    font-family: futura-button;
+    src: url('../../fonts/futura/Futura\ Bold\ font.ttf');
+}
+
+@font-face {
+    font-family: futura-content;
+    src: url('../../fonts/futura/Futura\ Light\ font.ttf');
+}
+
+@font-face {
+    font-family: futura-title;
+    src: url('../../fonts/futura/Futura\ Bold\ font.ttf');
+}
 
 .donate{
     width: 100%;
@@ -34,11 +48,15 @@
     background-color: transparent;
     margin-right: 0.5rem;
     margin-left: 0.5rem;
+    font-family: futura-content;
+    font-size: 21px;
 }
 
 .donate-2-title{
     text-align: center;
-    color: #223b05;
+    color: #6290c8;
+    font-size: 42px;
+    font-family: futura-title;
 }
 
 .donate-2-suggestions{
@@ -56,7 +74,132 @@
     outline: none;
     border: 2px solid #6290c8;
     border-radius:8px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     background-color: #6290c8;
     color: white;
+    font-family: futura-content;
+    font-size: 16px;
     padding: 1rem 0.5rem 1rem 0.5rem;
+}
+
+.donate-2-suggestions button:hover{
+    flex:1;
+    outline: none;
+    border: 2px solid #223b05;
+    border-radius:8px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: #223b05;
+    color: white;
+    padding: 1rem 0.5rem 1rem 0.5rem;
+}
+
+.donate-other{
+    margin-top: 1.5rem;
+    cursor: pointer;
+}
+
+.donate-form {
+    font-size: 14px;
+    position: relative;
+    border-top: 20px solid transparent;
+    margin-left: 4rem;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.donate-form input {
+    border: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: transparent;
+    border-bottom: 2px solid #6290c8;
+    width: 200px;
+    padding-left: 16px;
+    font-size: 16px;
+    outline: none;
+    color: #6290c8;
+}
+
+.donate-form-icon{
+    color: #6290c8;
+    position: relative;
+    left: 12px;
+    top: 2px;
+} 
+
+.donate-form .donate-placeholder {
+    position: absolute;
+    left: 30px;
+    top: 1px;
+    width: calc(100% - 24px);  
+    color: #6290c8;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-family: futura-content;
+    font-size: 16px;
+    transition: 
+    top 0.3s ease,
+    left 0.3s ease,
+    color 0.3s ease,
+    font-size 0.3s ease;
+}
+
+.donate-form input:focus + .donate-placeholder {
+    top: -14px;
+    left: 14px;
+    font-size: 10px;
+    color: #6290c8;
+}
+
+.donate-form input:not(:placeholder-shown) + .donate-placeholder {
+    top: -14px;
+    font-size: 10px;
+    color: #6290c8;
+}
+
+.donate-form input:not(:placeholder-shown) + .donate-placeholder
+.donate-form input:focus + .donate-placeholder {
+    top: -14px;
+    font-size: 10px;
+    color: #6290c8;
+}
+
+.donate-thank-you{
+    height: 7rem;
+    margin-top: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    color: #6290c8;
+    font-family: futura-content;
+    font-size: 18px;
+}
+
+.donate-final-button{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.donate-final-button button{
+    background-color: transparent;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border: 2px solid #6290c8;
+    border-radius: 12px;
+    color: #6290c8;
+    font-family: futura-button;
+    font-size: 16px;
+	text-decoration:none;
 }
