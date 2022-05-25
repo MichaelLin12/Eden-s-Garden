@@ -13,38 +13,32 @@
     src: url('../../fonts/futura/Futura\ Bold\ font.ttf');
 }
 
-.donate{
-    width: 100%;
-    height: 100%;
+
+.volunteer-canvas{
+    background-color: transparent;
+    height: calc(100vh - 2rem);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.donate-grid{
+.volunteer-grid{
     display: grid;
-    grid-template-columns: 400px auto;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    grid-column-gap:1.25rem;
+    grid-column-gap:2rem;
     height: 28rem;
     width: 48rem;
 }
 
-.donate-grid-1{
+.volunteer-grid-1{
     background-color: transparent;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     background-color:#223b05;
     color: white;
 }
 
-.donate-grid-2{
-    background-color: transparent;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    background-color:white;
-    color: #223b05;
-}
-
-.donate-content{
+.volunteer-content{
     background-color: transparent;
     margin-right: 0.5rem;
     margin-left: 0.5rem;
@@ -52,54 +46,26 @@
     font-size: 21px;
 }
 
-.donate-2-title{
+.volunteer-grid-2{
+    background-color: transparent;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color:white;
+    color: #223b05;
+}
+
+.volunteer-2-title{
     text-align: center;
     color: #6290c8;
-    font-size: 42px;
+    font-size: 36px;
     font-family: futura-title;
 }
 
-.donate-2-suggestions{
-    display: flex;
-    flex-direction: row;
-    margin-top: 3rem;
-    justify-content: space-between;
-    gap: 0.75rem;
-    padding-left: 0.2rem;
-    padding-right: 0.2rem;
-}
-
-.donate-2-suggestions button{
-    flex:1;
-    outline: none;
-    border: 2px solid #6290c8;
-    border-radius:8px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    background-color: #6290c8;
-    color: white;
-    font-family: futura-content;
-    font-size: 16px;
-    padding: 1rem 0.5rem 1rem 0.5rem;
-}
-
-.donate-2-suggestions button:hover{
-    cursor: pointer;
-    flex:1;
-    outline: none;
-    border: 2px solid #223b05;
-    border-radius:8px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    background-color: #223b05;
-    color: white;
-    padding: 1rem 0.5rem 1rem 0.5rem;
-}
-
-.donate-other{
-    margin-top: 1.5rem;
+.volunteer-other{
+    margin-top: 1rem;
     cursor: pointer;
 }
 
-.donate-form {
+.volunteer-form {
     font-size: 14px;
     position: relative;
     border-top: 20px solid transparent;
@@ -112,11 +78,15 @@ input::-webkit-inner-spin-button {
     margin: 0;
 }
 
-input[type=number] {
+input[type=text] {
     -moz-appearance: textfield;
 }
 
-.donate-form input {
+input::-webkit-calendar-picker-indicator {
+    display: none;
+}
+
+.volunteer-form input {
     border: none;
     -webkit-appearance: none;
     -ms-appearance: none;
@@ -125,22 +95,15 @@ input[type=number] {
     background: transparent;
     border-bottom: 2px solid #6290c8;
     width: 200px;
-    padding-left: 16px;
+    padding-left: 0px;
     font-size: 16px;
     outline: none;
     color: #6290c8;
 }
 
-.donate-form-icon{
-    color: #6290c8;
-    position: relative;
-    left: 12px;
-    top: 2px;
-} 
-
-.donate-form .donate-placeholder {
+.volunteer-form .volunteer-placeholder {
     position: absolute;
-    left: 30px;
+    left: 0px;
     top: 1px;
     width: calc(100% - 24px);  
     color: #6290c8;
@@ -156,42 +119,40 @@ input[type=number] {
     font-size 0.3s ease;
 }
 
-.donate-form input:focus + .donate-placeholder {
+.volunteer-form input:focus + .volunteer-placeholder {
     top: -14px;
-    left: 14px;
+    left: 0px;
     font-size: 10px;
     color: #6290c8;
 }
 
-.donate-form input:not(:placeholder-shown) + .donate-placeholder {
-    top: -14px;
-    font-size: 10px;
-    color: #6290c8;
-}
-
-.donate-form input:not(:placeholder-shown) + .donate-placeholder
-.donate-form input:focus + .donate-placeholder {
+.volunteer-form input:not(:placeholder-shown) + .volunteer-placeholder {
     top: -14px;
     font-size: 10px;
     color: #6290c8;
 }
 
-.donate-thank-you{
-    height: 7rem;
+.volunteer-form input:not(:placeholder-shown) + .volunteer-placeholder
+.volunteer-form input:focus + .volunteer-placeholder {
+    top: -14px;
+    font-size: 10px;
+    color: #6290c8;
+}
+
+.volunteer-label-2{
     margin-top: 1rem;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    padding-left: 4.75rem;
     color: #6290c8;
     font-family: futura-content;
-    font-size: 18px;
+    font-size: 21px;
 }
 
-.donate-final-button{
+.volunteer-final-button{
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 4rem;
 }
 
-.donate-final-button button{
+.volunteer-final-button button{
     cursor: pointer;
     background-color: transparent;
     padding-left: 5rem;

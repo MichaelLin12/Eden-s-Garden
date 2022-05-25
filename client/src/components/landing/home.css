@@ -85,7 +85,7 @@
 }
 
 .second{
-    flex-grow: 1;
+    flex-grow: 1.5;
     background-color: white;
     display: flex;
     align-items: center;
