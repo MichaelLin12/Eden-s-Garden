@@ -1,0 +1,120 @@
+@font-face {
+    font-family: futura-title;
+    src: url('../../fonts/futura/Futura\ Bold\ font.ttf');
+}
+
+@font-face {
+    font-family: futura-button;
+    src: url('../../fonts/futura/Futura\ Bold\ font.ttf');
+}
+
+@font-face {
+    font-family: futura-content;
+    src: url('../../fonts/futura/Futura\ Light\ font.ttf');
+}
+
+
+.food-canvas{
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.food-paper{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    height: fit-content;
+    width: fit-content;
+    padding: 1.5rem 1.25rem;
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.food-ele1{
+    font-size: 42px;
+    font-family: futura-title;
+    height: fit-content;
+    color: #223b05;
+    text-align: center;
+}
+
+.food-ele2{
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.food-file{
+    color: #6290c8;
+    font-family: futura-content;
+    font-size: 18px;
+}
+
+.food-file-input{
+    width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.food-file label{
+    border:3px solid #6290c8;
+    padding: 0.25rem 3rem 0.25rem 3rem;
+    border-radius: 8px;
+    margin-right:0.5rem;
+}
+
+
+.food-file label:hover{
+    cursor: pointer;
+}
+
+.food-label{
+    color: #223b05;
+    font-family: futura-content;
+    font-size: 18px;
+    position: relative;
+    top:-6.5rem;
+    left:8rem;
+    cursor: pointer;
+}
+
+.food-ele3{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    gap:0.5rem;
+}
+
+.food-ele3 input{
+    width: 140px;
+    background-color: #E6E6E3;
+    width: 100%;
+    font-family: futura-content;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    color: #223b05;
+}
+
+.food-ele4{
+    margin-top:0.5rem;
+}
+
+.food-textarea{
+    background-color: #E6E6E3;
+    outline: none;
+    border: none;
+    width: 21.3rem;
+    height: 9rem;
+    padding: 6px 3px;
+    resize: none;
+    font-family: futura-content;
+    font-size: 18px;
+    color: #223b05;
+}

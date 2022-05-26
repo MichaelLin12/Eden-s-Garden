@@ -2,13 +2,15 @@ import React from 'react'
 import './sidebar.css'
 import { Link } from 'react-router-dom'
 
-export default function Sidebar(props:{handleClick:Function}) {
+export default function Sidebar(props:{handleClick:Function,buttons:string[]}) {
+
+  const links = props.buttons.map(element => {
+    return(<Link to="#" onClick={(e)=>{props.handleClick(e)}}>{element}</Link>)
+  });
+
   return (
     <div className="sidebar">
-      <Link to="#" onClick={(e)=>{props.handleClick(e)}}>Donate</Link>
-      <Link to="#" onClick={(e)=>{props.handleClick(e)}}>Volunteer</Link>
-      <Link to="#" onClick={(e)=>{props.handleClick(e)}}>Apply for Internship</Link>
-      <Link to="#" onClick={(e)=>{props.handleClick(e)}}>Apply for Job</Link>
+      {links}
     </div>
   )
 }

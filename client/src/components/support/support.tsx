@@ -43,7 +43,7 @@ export default function Support() {
       </div>
       <div className='support'>
         <div className='ele1'>
-          <Sidebar handleClick={(e:any)=>{onClick(e)}}/>
+          <Sidebar handleClick={(e:any)=>{onClick(e)}} buttons={['Donate','Volunteer','Apply for Internship','Apply for Job']}/>
         </div>
         <div className='ele2'>
           {view()}
