@@ -3,21 +3,22 @@ import './footer.css'
 import { FaTwitter,FaSnapchat,FaFacebook,FaInstagram,FaYoutube,FaLinkedin } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
+
 export default function Footer() {
   return (
     <div className='footer'>
         <div className='links'>
             <div className='list-one'>
-                <div><Link to={'/home'} style={{textDecoration:'none',color:'#ffffff'}}>Donate</Link></div>
-                <div><Link to={'/home'} style={{textDecoration:'none',color:'#ffffff'}}>Events</Link></div>
-                <div><Link to={'/home'} style={{textDecoration:'none',color:'#ffffff'}}>Our Story</Link></div>
-                <div><Link to={'/home'} style={{textDecoration:'none',color:'#ffffff'}}>Our Mission</Link></div>
+                <div><Link to={'/support'} style={{textDecoration:'none',color:'#ffffff'}}>Donate</Link></div>
+                <div><Link to={'/events'} style={{textDecoration:'none',color:'#ffffff'}}>Events</Link></div>
+                <div><Link to={'/learn'} style={{textDecoration:'none',color:'#ffffff'}}>Our Story</Link></div>
+                <div><Link to={'/learn'} style={{textDecoration:'none',color:'#ffffff'}}>Our Mission</Link></div>
             </div>
             <div className='list-two'>
-                <div><Link to={'/home'} style={{textDecoration:'none',color:'#ffffff'}}>Our Work</Link></div>
-                <div><Link to={'/home'} style={{textDecoration:'none',color:'#ffffff'}}>Volunteer</Link></div>
-                <div><Link to={'/home'} style={{textDecoration:'none',color:'#ffffff'}}>Intern</Link></div>
-                <div><Link to={'/home'} style={{textDecoration:'none',color:'#ffffff'}}>Apply for Job</Link></div>
+                <div><Link to={'/learn'} style={{textDecoration:'none',color:'#ffffff'}}>Our Work</Link></div>
+                <div><Link to={'/support'} style={{textDecoration:'none',color:'#ffffff'}}>Volunteer</Link></div>
+                <div><Link to={'/support'} style={{textDecoration:'none',color:'#ffffff'}}>Intern</Link></div>
+                <div><Link to={'/support'} style={{textDecoration:'none',color:'#ffffff'}}>Apply for Job</Link></div>
             </div>
             <div className='list-three'>
             <h3>Stay up to date</h3>

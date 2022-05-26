@@ -11,7 +11,7 @@ export default function Learn() {
         </div>
         <div className='overlay'>
             <div className='content'>
-                <h1>Our Story</h1>
+                <h1 id='our-story'>Our Story</h1>
                 <p>Excepteur officia nisi pariatur exercitation ex anim. Elit eiusmod et elit velit nulla eiusmod eu qui consectetur eu exercitation anim. Reprehenderit culpa anim eiusmod id commodo esse in excepteur officia cupidatat sunt. Id sint ad veniam adipisicing quis minim eiusmod nulla. Ad cillum minim velit laboris aute mollit sint aliqua officia velit ipsum officia pariatur sit.<br/><br/>
 
                 Ipsum culpa deserunt magna non excepteur occaecat quis ad consectetur id elit. Eu aliquip sint excepteur dolor ea nulla anim sunt veniam. Tempor laborum ullamco esse elit labore nulla cillum.<br/><br/>
@@ -32,7 +32,7 @@ export default function Learn() {
 
                 Ea anim Lorem ea aliqua enim consectetur ex consequat voluptate exercitation. Dolor excepteur cillum quis ipsum tempor eu Lorem eiusmod consequat. Consequat velit eiusmod est aliqua culpa.
                 </p>
-                <h1>Our Mission</h1>
+                <h1 id='our-mission'>Our Mission</h1>
                 <p>
                     Cupidatat ad quis velit enim ipsum eiusmod mollit magna minim id sunt. Lorem aliqua consectetur culpa occaecat mollit incididunt ullamco. Mollit dolore sunt sunt amet. Exercitation enim sint deserunt magna nulla commodo culpa aliquip tempor. Voluptate elit ea eu aute sit excepteur.<br/><br/>
 
@@ -54,7 +54,7 @@ export default function Learn() {
 
                     Laboris aliquip nostrud anim commodo. Irure est minim commodo velit. Veniam sunt commodo ea velit mollit culpa ut amet aute laborum voluptate cupidatat nulla.
                 </p>
-                <h1>Our Work</h1>
+                <h1 id='our-work'>Our Work</h1>
                 <p>
                     Velit aliquip dolor veniam fugiat dolore minim eiusmod velit non nulla. Fugiat nostrud laboris laborum irure cupidatat dolore. Incididunt ut esse id pariatur ex consequat aute proident. Occaecat deserunt est enim nostrud. Eu adipisicing fugiat culpa nostrud nulla sunt occaecat consequat aliqua exercitation. Eu amet ullamco dolor eu elit in.<br/><br/>
 
