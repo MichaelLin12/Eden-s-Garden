@@ -1,8 +1,6 @@
 import React,{useState} from 'react'
 import './intern.css'
 import img1 from '../../images/istockphoto-1202957601-612x612.jpg'
-import {Select,MenuItem} from '@mui/material'
-import { borderBottom } from '@mui/system'
 
 export default function Intern() {
   const [page,setPage] = useState(true)

@@ -1,0 +1,293 @@
+@font-face {
+    font-family: futura-button;
+    src: url('../../fonts/futura/Futura\ Bold\ font.ttf');
+}
+
+@font-face {
+    font-family: futura-content;
+    src: url('../../fonts/futura/Futura\ Light\ font.ttf');
+}
+
+@font-face {
+    font-family: futura-title;
+    src: url('../../fonts/futura/Futura\ Bold\ font.ttf');
+}
+
+.job-canvas{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.job-grid{
+    display: grid;
+    grid-template-columns: 400px auto;
+    grid-template-rows: auto;
+    grid-column-gap:1.25rem;
+    height: 28rem;
+    width: 48rem;
+}
+
+.job-grid-1{
+    background-color: transparent;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color:#223b05;
+    color: white;
+}
+
+.job-content{
+    background-color: transparent;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    font-family: futura-content;
+    font-size: 21px;
+}
+
+.job-grid-2{
+    background-color: transparent;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color:white;
+    color: #223b05;
+}
+
+.job-2-title{
+    text-align: center;
+    color: #6290c8;
+    font-size: 36px;
+    font-family: futura-title;
+}
+
+.job-other{
+    margin-top: 1.5rem;
+    cursor: pointer;
+}
+
+.job-form {
+    font-size: 14px;
+    position: relative;
+    border-top: 20px solid transparent;
+    margin-left: 4rem;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=text] {
+    -moz-appearance: textfield;
+}
+
+input::-webkit-calendar-picker-indicator {
+    display: none;
+}
+
+.job-form input {
+    border: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: transparent;
+    border-bottom: 2px solid #6290c8;
+    width: 200px;
+    padding-left: 0px;
+    font-size: 16px;
+    outline: none;
+    color: #6290c8;
+}
+
+.job-form .job-placeholder {
+    position: absolute;
+    left: 0px;
+    top: 1px;
+    width: calc(100% - 24px);  
+    color: #6290c8;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-family: futura-content;
+    font-size: 16px;
+    transition: 
+    top 0.3s ease,
+    left 0.3s ease,
+    color 0.3s ease,
+    font-size 0.3s ease;
+}
+
+.job-form input:focus + .job-placeholder {
+    top: -14px;
+    left: 0px;
+    font-size: 10px;
+    color: #6290c8;
+}
+
+.job-form input:not(:placeholder-shown) + .job-placeholder {
+    top: -14px;
+    font-size: 10px;
+    color: #6290c8;
+}
+
+.job-form input:not(:placeholder-shown) + .job-placeholder
+.job-form input:focus + .job-placeholder {
+    top: -14px;
+    font-size: 10px;
+    color: #6290c8;
+}
+
+.job-file{
+    margin-top: 1.5rem;
+    color: #6290c8;
+    font-family: futura-content;
+    font-size: 18px;
+    margin-left: 4rem;
+}
+
+.job-file label{
+    border:3px solid #6290c8;
+    padding: 0.25rem 3rem 0.25rem 3rem;
+    border-radius: 8px;
+    margin-right:0.5rem;
+}
+
+.job-file label:hover{
+    cursor: pointer;
+}
+
+.job-file-input{
+    width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.job-top{
+    margin-top: 1.5rem;
+}
+
+.job-next{
+    margin-top: 3.5rem;
+    text-align: center;
+}
+
+.job-next button{
+    background-color: transparent;
+    border:3px solid #6290c8;
+    border-radius: 8px;
+    color: #6290c8;
+    padding: 0.5rem 6rem;
+}
+
+.job-next button:hover{
+    cursor: pointer;
+}
+
+.job-back{
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.job-back button{
+    background-color: transparent;
+    border:3px solid #6290c8;
+    border-radius: 8px;
+    color: #6290c8;
+    padding: 0.5rem 6rem;
+}
+
+.job-back button:hover{
+    cursor: pointer;
+}
+
+.job-fileName{
+    color: #6290c8;
+    font-family: futura-content;
+    font-size:16px;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.job-application{
+    margin-top: 0.5rem;
+    text-align: center;
+    color: #6290c8;
+}
+
+.job-application p{
+    font-family: futura-content;
+    font-size: 14px;
+}
+
+.job-application select{
+    font-family: futura-content;
+    font-size: 16px;
+    color: #6290c8;
+    border: 3px solid #6290c8;
+    border-radius: 8px;
+    padding:0.25rem 5rem;
+}
+
+.job-application select::after{
+    font-family: futura-content;
+    font-size: 16px;
+    color: #6290c8;
+    border: 3px solid #6290c8;
+    border-radius: 8px;
+
+}
+
+.job-application select:focus{
+    font-family: futura-content;
+    font-size: 16px;
+    color: #6290c8;
+    border: 3px solid #6290c8;
+    border-radius: 8px;
+    padding:0.25rem 5rem;
+    outline:none;
+}
+
+@media screen and (max-width:1100px){
+
+    .job-canvas{
+        width: 100%;
+        height: 100%;
+        display: block;
+        padding-left: 25%;
+    }
+
+    .job-grid{
+        display: grid;
+        grid-template-columns: 400px;
+        grid-template-rows: auto 420px;
+        grid-row-gap:1.25rem;
+    }
+
+    .job-next button{
+        background-color: transparent;
+        border:3px solid #6290c8;
+        border-radius: 8px;
+        color: #6290c8;
+        padding: 0.5rem 7rem;
+    }
+
+    .job-back{
+        margin-top: 0.75rem;
+        text-align: center;
+    }
+    
+}
+
+@media screen and (max-width:767px){
+    .job-canvas{
+        margin-top: 1rem;
+        width: 100%;
+        height: 100%;
+        display: block;
+        padding-left: 0;
+    }
+}
