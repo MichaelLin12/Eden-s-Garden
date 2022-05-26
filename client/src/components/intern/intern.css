@@ -143,13 +143,14 @@ input::-webkit-calendar-picker-indicator {
     color: #6290c8;
     font-family: futura-content;
     font-size: 18px;
-    text-align: center;
+    margin-left: 4rem;
 }
 
 .intern-file label{
     border:3px solid #6290c8;
     padding: 0.25rem 3rem 0.25rem 3rem;
     border-radius: 8px;
+    margin-right:0.5rem;
 }
 
 .intern-file label:hover{
@@ -166,11 +167,11 @@ input::-webkit-calendar-picker-indicator {
 }
 
 .intern-top{
-    margin-top: 2.5rem;
+    margin-top: 1.5rem;
 }
 
 .intern-next{
-    margin-top: 1.5rem;
+    margin-top: 3.5rem;
     text-align: center;
 }
 
@@ -179,10 +180,114 @@ input::-webkit-calendar-picker-indicator {
     border:3px solid #6290c8;
     border-radius: 8px;
     color: #6290c8;
-    padding: 0.5rem 2.5rem;
+    padding: 0.5rem 6rem;
 }
 
 .intern-next button:hover{
     cursor: pointer;
 }
 
+.intern-back{
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.intern-back button{
+    background-color: transparent;
+    border:3px solid #6290c8;
+    border-radius: 8px;
+    color: #6290c8;
+    padding: 0.5rem 6rem;
+}
+
+.intern-back button:hover{
+    cursor: pointer;
+}
+
+.intern-fileName{
+    color: #6290c8;
+    font-family: futura-content;
+    font-size:16px;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.intern-application{
+    margin-top: 0.5rem;
+    text-align: center;
+    color: #6290c8;
+}
+
+.intern-application p{
+    font-family: futura-content;
+    font-size: 14px;
+}
+
+.intern-application select{
+    font-family: futura-content;
+    font-size: 16px;
+    color: #6290c8;
+    border: 3px solid #6290c8;
+    border-radius: 8px;
+    padding:0.25rem 5rem;
+}
+
+.intern-application select::after{
+    font-family: futura-content;
+    font-size: 16px;
+    color: #6290c8;
+    border: 3px solid #6290c8;
+    border-radius: 8px;
+
+}
+
+.intern-application select:focus{
+    font-family: futura-content;
+    font-size: 16px;
+    color: #6290c8;
+    border: 3px solid #6290c8;
+    border-radius: 8px;
+    padding:0.25rem 5rem;
+    outline:none;
+}
+
+@media screen and (max-width:1100px){
+
+    .intern-canvas{
+        width: 100%;
+        height: 100%;
+        display: block;
+        padding-left: 25%;
+    }
+
+    .intern-grid{
+        display: grid;
+        grid-template-columns: 400px;
+        grid-template-rows: auto 420px;
+        grid-row-gap:1.25rem;
+    }
+
+    .intern-next button{
+        background-color: transparent;
+        border:3px solid #6290c8;
+        border-radius: 8px;
+        color: #6290c8;
+        padding: 0.5rem 7rem;
+    }
+
+    .intern-back{
+        margin-top: 0.75rem;
+        text-align: center;
+    }
+    
+}
+
+@media screen and (max-width:767px){
+    .intern-canvas{
+        margin-top: 1rem;
+        width: 100%;
+        height: 100%;
+        display: block;
+        padding-left: 0;
+    }
+}

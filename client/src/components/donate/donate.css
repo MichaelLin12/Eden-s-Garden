@@ -208,6 +208,194 @@ input[type=number] {
 	text-decoration:none;
 }
 
+.donate-final-button-back{
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.donate-final-button-back button{
+    cursor: pointer;
+    background-color: transparent;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border: 2px solid #6290c8;
+    border-radius: 12px;
+    color: #6290c8;
+    font-family: futura-button;
+    font-size: 16px;
+	text-decoration:none;
+}
+
+.donate-2-accepted{
+    margin-top: 0.75rem;
+    color: #6290c8;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.donate-other-r{
+    margin-top: 1.5rem;
+    cursor: pointer;
+}
+
+.donate-form-r {
+    font-size: 14px;
+    position: relative;
+    border-top: 20px solid transparent;
+    margin-left: 4rem;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.donate-form-r input {
+    border: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: transparent;
+    border-bottom: 2px solid #6290c8;
+    width: 200px;
+    padding-left: 16px;
+    font-size: 16px;
+    outline: none;
+    color: #6290c8;
+}
+
+.donate-form-icon-r{
+    color: #6290c8;
+    position: relative;
+    left: 12px;
+    top: 2px;
+} 
+
+.donate-form-r .donate-placeholder-r {
+    position: absolute;
+    top: -14px;
+    left: 14px;
+    width: calc(100% - 24px);  
+    color: #6290c8;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-family: futura-content;
+    font-size: 10px;
+    transition: 
+    top 0.3s ease,
+    left 0.3s ease,
+    color 0.3s ease,
+    font-size 0.3s ease;
+}
+
+.donate-form-r input:focus + .donate-placeholder-r {
+    top: -14px;
+    left: 14px;
+    font-size: 10px;
+    color: #6290c8;
+}
+
+.donate-form-r input:not(:placeholder-shown) + .donate-placeholder-r {
+    top: -14px;
+    left: 14px;
+    font-size: 10px;
+    color: #6290c8;
+}
+
+.donate-form-r input:not(:placeholder-shown) + .donate-placeholder-r
+.donate-form-r input:focus + .donate-placeholder-r {
+    top: -14px;
+    left: 14px;
+    font-size: 10px;
+    color: #6290c8;
+}
+
+.donate-other-p{
+    margin-top: 1.5rem;
+    cursor: pointer;
+}
+
+.donate-form-p {
+    font-size: 14px;
+    position: relative;
+    border-top: 20px solid transparent;
+    margin-left: 4.8rem;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.donate-form-p input {
+    border: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: transparent;
+    border-bottom: 2px solid #6290c8;
+    width: 216px;
+    font-size: 16px;
+    outline: none;
+    color: #6290c8;
+}
+
+.donate-form-p .donate-placeholder-p {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: calc(100% - 24px);  
+    color: #6290c8;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-family: futura-content;
+    font-size: 16px;
+    transition: 
+    top 0.3s ease,
+    left 0.3s ease,
+    color 0.3s ease,
+    font-size 0.3s ease;
+}
+
+.donate-form-p input:focus + .donate-placeholder-p {
+    top: -14px;
+    left: 0px;
+    font-size: 10px;
+    color: #6290c8;
+}
+
+.donate-form-p input:not(:placeholder-shown) + .donate-placeholder-p {
+    top: -14px;
+    left: 0px;
+    font-size: 10px;
+    color: #6290c8;
+}
+
+.donate-form-p input:not(:placeholder-shown) + .donate-placeholder-p
+.donate-form-p input:focus + .donate-placeholder-p {
+    top: -14px;
+    left: 0px;
+    font-size: 10px;
+    color: #6290c8;
+}
+
 @media screen and (max-width:1100px){
 
     .donate{

@@ -22,7 +22,7 @@ export default function Volunteer() {
           </div>
           <div className='volunteer-other'>
             <label className="volunteer-form">
-              <input type="email" placeholder="&nbsp;"/>
+              <input type="text" placeholder="&nbsp;"/>
               <span className="volunteer-placeholder">Email</span>
             </label>
           </div>
