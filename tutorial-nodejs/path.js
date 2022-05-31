@@ -10,3 +10,6 @@ console.log(base)
 
 const absolute = path.resolve(__dirname,'content','subfolder','test.txt')
 console.log(absolute)
+
+console.log(`dirname is ${__dirname}`)
+console.log(`filename is ${__filename}`)
