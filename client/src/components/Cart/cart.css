@@ -1,0 +1,169 @@
+.cart-page{
+    width: 100%;
+    height: 100%;
+}
+
+.cart-card{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    height: 9.25rem;
+    width: 96%;
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+    margin-right: 2rem;
+    padding: 0.2rem 0.5rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.cart-card-1{
+    color: #223b05;
+    font-family: futura-content;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-label{
+    position: relative;
+    top:-6.5rem;
+    left:8rem;
+    z-index: 5;
+}
+
+.cart-card-2{
+    background-color: transparent;
+    flex:1;
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-card-2-name{
+    background-color: transparent;
+    color:#223b05;
+    font-family: futura-title;
+    text-align: center;
+    font-size:21px;
+}
+
+.cart-card-2-description{
+    margin-top: 0.5rem;
+    background-color: transparent;
+    color:#223b05;
+    font-family: futura-content;
+    font-size: 16px;
+}
+
+.cart-card-3{
+    flex:1;
+}
+
+.cart-card-3 form {
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 25px;
+}
+
+.cart-value-button {
+    display: inline-block;
+    border: 1px solid #6290c8;
+    margin: 0px;
+    width: 40px;
+    height: 20px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 11px 0;
+    background: #6290c8;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+  
+.cart-value-button:hover {
+    cursor: pointer;
+}
+  
+.cart-card-3 form #decrease {
+    margin-right: -4px;
+    border-radius: 8px 0 0 8px;
+    color: #FFFFFF;
+}
+  
+.cart-card-3 form #increase {
+    margin-left: -4px;
+    border-radius: 0 8px 8px 0;
+    color: #FFFFFF;
+}
+  
+.cart-card-3 form #input-wrap {
+    margin: 0px;
+    padding: 0px;
+}
+  
+.cart-card-3 input#number {
+    text-align: center;
+    border: none;
+    border-top: 1px solid #6290c8;
+    border-bottom: 1px solid #6290c8;
+    margin: 0px;
+    width: 40px;
+    height: 40px;
+    outline: none;
+    color: #6290c8;
+    cursor:default;
+}
+  
+.cart-card-3 input[type=number]::-webkit-inner-spin-button,
+.cart-card-3 input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.cart-delete{
+    text-align: center;
+    margin-top: 0.75rem;
+}
+
+.cart-delete button{
+    cursor: pointer;
+    background-color: transparent;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border: 2px solid #6290c8;
+    border-radius: 12px;
+    color: #6290c8;
+    font-family: futura-button;
+    font-size: 16px;
+	text-decoration:none;
+}
+
+.cart-buy{
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 6.4rem;
+}
+
+.cart-buy button{
+    cursor: pointer;
+    background-color: transparent;
+    padding-left: 6.5rem;
+    padding-right: 6.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border: 2px solid #6290c8;
+    border-radius: 12px;
+    color: #6290c8;
+    font-family: futura-button;
+    font-size: 16px;
+	text-decoration:none;
+}

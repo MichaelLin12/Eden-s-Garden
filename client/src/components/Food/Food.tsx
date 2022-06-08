@@ -30,7 +30,7 @@ export default function Food() {
   return (
     <div className='food-canvas'>
         <div className='food-paper'>
-            <div className='food-ele1'>Food</div>
+            <div className='food-ele1'>Donate Food</div>
             <div className='food-ele2'>
               <label>
                 <input type={'file'} className='food-file-input' onChange={onImageChange}></input>
@@ -43,9 +43,10 @@ export default function Food() {
             </div>
             <div className='food-ele4'>
               <label>
-                <textarea className='food-textarea' placeholder='Content'></textarea>
+                <textarea className='food-textarea' placeholder='Description'></textarea>
               </label>
             </div>
+            <button className='food-donate'>Donate</button>
         </div>
     </div>
   )

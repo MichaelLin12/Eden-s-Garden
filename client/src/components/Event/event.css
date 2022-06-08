@@ -28,11 +28,22 @@
     flex-direction: row;
 }
 
-.buttons button{
+.buttons div{
+    background-color: transparent;
+    flex: 1;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-box-wrapper{
+    position: relative;
+}
+
+.event-modal{
     background-color: transparent;
     border: none;
     outline: none;
-    flex: 1;
     color: #223b05;
     cursor: pointer;
 }

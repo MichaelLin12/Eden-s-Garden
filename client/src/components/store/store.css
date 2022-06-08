@@ -5,7 +5,7 @@
 .store{
     padding-top: 2rem;
     width: 100vw;
-    height: calc(100vh - 2rem);
+    height: calc(110vh - 2rem);
     display: flex;
     flex-direction: row;
 }
