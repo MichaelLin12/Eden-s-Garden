@@ -7,7 +7,6 @@ import Support from './components/support/support';
 import Events from './components/events/Events';
 import Store from './components/store/Store'
 import ProtectedRoute from './ProtectedRoute';
-import Practice from './components/Modal/Practice'
 import {Routes,Route} from 'react-router-dom'
 
 
@@ -30,7 +29,6 @@ function App() {
                                         <Store/>
                                       </ProtectedRoute>
                                       }/>
-        <Route path='/practice' element={<Practice/>}/>
       </Routes>
     </div>
   );

@@ -1,4 +1,6 @@
 import React,{useRef,useEffect} from 'react'
+import Calendar from 'react-calendar'
+import './calendar.css'
 
 export default function Modal(props:any) {
     const ref:{current:any} = useRef(null);
@@ -18,12 +20,38 @@ export default function Modal(props:any) {
         };
         }, [ onClickOutside ]);
 
+
+    const info = ()=>{
+        if(props.message === 'location'){
+            return(
+                <div>
+                    Location
+                </div>
+            )
+        }else if(props.message === 'calendar'){
+            return(
+                <div>
+                    <div className='modal-calendar'>
+                        <Calendar value={new Date()}/>
+                    </div>
+                </div>
+            )
+        }else if(props.message === 'more'){
+            return(
+                <div className='model-more'>
+                    <div><a href='#'>Volunteer</a></div>
+                    <div><a href='#'>Learn More</a></div>
+                    <div><a href='#'>Spread the Word</a></div>
+                </div>
+            )
+        }
+    }
     if(!props.show)
         return null;
 
     return (
-        <div ref={ref} className='info-box' style={{backgroundColor:'#6290c8',top:'28px',left:'24px'}}>
-            {props.message}
+        <div ref={ref} className='info-box' style={{backgroundColor:props.background,top:props.top,left:'0px'}}>
+            {info()}
         </div>
     )
 }

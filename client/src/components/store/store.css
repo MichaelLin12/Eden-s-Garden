@@ -3,9 +3,9 @@
 }
 
 .store{
-    padding-top: 2rem;
+    padding-top: 1.5rem;
     width: 100vw;
-    height: calc(110vh - 2rem);
+    height: fit-content;
     display: flex;
     flex-direction: row;
 }

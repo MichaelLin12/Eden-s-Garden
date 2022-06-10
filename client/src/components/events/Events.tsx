@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState} from 'react'
 import './events.css'
 import Navbar from '../navbar/navbar'
 import Footer from '../footer/Footer'
@@ -8,8 +8,10 @@ import {AiFillCalendar} from 'react-icons/ai'
 import {RiMoneyDollarCircleFill} from 'react-icons/ri'
 import {FiMoreVertical} from 'react-icons/fi'
 import Event from '../Event/Events'
+import Modal from '../Modal/Modal'
 
 export default function Events() {
+  const [showInfo,setShowInfo] = useState(false)
   return (
     <div>
       <div>
@@ -21,21 +23,6 @@ export default function Events() {
       <div className='space1'/>
       <div className='cards'>
         <div className='grid'>
-          <Event/>
-          <Event/>
-          <Event/>
-          <Event/>
-          <Event/>
-          <Event/>
-          <Event/>
-          <Event/>
-          <Event/>
-          <Event/>
-          <Event/>
-          <Event/>
-          <Event/>
-          <Event/>
-          <Event/>
           <Event/>
           <Event/>
           <Event/>
