@@ -1,0 +1,250 @@
+@font-face {
+    font-family: futura-button;
+    src: url('../../fonts/futura/Futura\ Bold\ font.ttf');
+}
+
+@font-face {
+    font-family: futura-content;
+    src: url('../../fonts/futura/Futura\ Light\ font.ttf');
+}
+
+@font-face {
+    font-family: futura-title;
+    src: url('../../fonts/futura/Futura\ Bold\ font.ttf');
+}
+
+.market-page{
+    height: fit-content;
+    min-height: 40rem;
+    width: 100%;
+}
+
+.market-events{
+    padding-top: 1.5rem;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+}
+
+.market-searchbar{
+    background-color: transparent;
+    outline: none;
+    border: 2px solid #223b05;
+    border-radius: 16px;
+    padding: 0.75rem 0rem 0.75rem 1.5rem;
+    color: #223b05;
+    text-align: left;
+    width: 35%;
+    font-family: futura-text;
+    font-size: 16px;
+}
+
+.market-cards{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 7rem;
+    margin-top: 1rem;
+}
+
+.market-grid{
+    width: 85%;
+    height: fit-content;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5rem;
+    row-gap: 4rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.market-card{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    height: fit-content;
+    width: 19.5rem;
+}
+
+.market-name{
+    font-size: 24px;
+    text-align: center;
+    font-family: futura-title;
+    color: #223b05;
+}
+
+.market-img{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.market-description{
+    width: 100%;
+    height: 4rem;
+    color:#223b05;
+    font-family: futura-content;
+    font-size: 16px;
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.market-description span{
+    font-family: futura-title;
+    font-size: 16px;
+    color: #223b05;
+    margin-right: 0.2rem;
+}
+
+.market-delivery{
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.market-delivery-space{
+    padding: 0.5rem 0.5rem;
+}
+
+.market-form-control{
+    display: inline-block;
+    position: relative;
+    padding-left: 28px;
+    margin-bottom: 21px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: futura-title;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.market-form-control input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom radio button */
+.market-words{
+    position: absolute;
+    top: -2px;
+    left: 0px;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+    white-space: nowrap; 
+}
+
+/* On mouse-over, add a grey background color */
+.market-form-control:hover input ~ .market-words {
+    background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.market-form-control input:checked ~ .market-words {
+    background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.market-words:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.market-form-control input:checked ~ .market-words:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.market-form-control .market-words:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+
+.market-order{
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+}
+
+.market-order button{
+    text-align: center;
+    margin-top: 0.25rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    background-color: transparent;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border: 2px solid #223b05;
+    border-radius: 12px;
+    color: #223b05;
+    font-family: futura-button;
+    font-size: 16px;
+	text-decoration:none;
+}
+
+@media screen and (max-width:1200px) {
+    .market-grid{
+        width: 85%;
+        height: fit-content;
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 5rem;
+        row-gap: 4rem;
+        align-items: center;
+        justify-content: center;
+    }
+    .market-searchbar{
+        background-color: transparent;
+        outline: none;
+        border: 2px solid #223b05;
+        border-radius: 16px;
+        padding: 0.75rem 0rem 0.75rem 1.5rem;
+        color: #223b05;
+        text-align: left;
+        width: 45%;
+        font-family: futura-text;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .market-grid{
+        width: 85%;
+        height: fit-content;
+        display:grid;
+        grid-template-columns: auto;
+        column-gap: 5rem;
+        row-gap: 4rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .market-searchbar{
+        background-color: transparent;
+        outline: none;
+        border: 2px solid #223b05;
+        border-radius: 16px;
+        padding: 0.75rem 0rem 0.75rem 1.5rem;
+        color: #223b05;
+        text-align: left;
+        width: 50%;
+        font-family: futura-text;
+        font-size: 16px;
+    }
+}

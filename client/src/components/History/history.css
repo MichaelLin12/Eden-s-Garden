@@ -1,0 +1,71 @@
+@font-face {
+    font-family: futura-button;
+    src: url('../../fonts/futura/Futura\ Bold\ font.ttf');
+}
+
+@font-face {
+    font-family: futura-content;
+    src: url('../../fonts/futura/Futura\ Light\ font.ttf');
+}
+
+@font-face {
+    font-family: futura-title;
+    src: url('../../fonts/futura/Futura\ Bold\ font.ttf');
+}
+.history-page{
+    height: fit-content;
+    min-height: 30rem;
+    width: 100%;
+}
+
+.history-card{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    height: 9.25rem;
+    width: 98%;
+    margin-top: 1rem;
+    margin-left: 0.2rem;
+    padding: 0.2rem 0.5rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.history-card-1{
+    color: #223b05;
+    font-family: futura-content;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.history-card-2{
+    background-color: transparent;
+    flex:1;
+    display: flex;
+    flex-direction: column;
+}
+
+.history-card-2-name{
+    background-color: transparent;
+    color:#223b05;
+    font-family: futura-title;
+    text-align: center;
+    font-size:21px;
+}
+
+.history-card-2-description{
+    margin-top: 0.5rem;
+    background-color: transparent;
+    color:#223b05;
+    font-family: futura-content;
+    font-size: 16px;
+}
+
+.history-card-3{
+    flex:1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
