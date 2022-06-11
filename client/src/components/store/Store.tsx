@@ -8,7 +8,7 @@ import Market from '../Market/Market'
 import Cart from '../Cart/Cart'
 import History from '../History/History'
 
-export default function Store() {
+export default function Store(props:{supportPage:string, change:any}) {
 
   const [page, setPage]:[String,Function] = useState('Donate');
 
@@ -51,7 +51,7 @@ export default function Store() {
         </div>
       </div>
       <div>
-        <Footer/>
+        <Footer supportPage={props.supportPage} change={props.change}/>
       </div>
     </div>
   )

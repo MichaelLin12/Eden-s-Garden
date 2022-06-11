@@ -10,7 +10,7 @@ import img4 from '../../images/istockphoto-1202957601-612x612.jpg'
 import img5 from '../../images/istockphoto-621904294-612x612.jpg'
 
 
-export default function Home() {
+export default function Home(props:{supportPage:string, change:any}) {
   return (
     <div>
       <div className='landing'>
@@ -42,7 +42,7 @@ export default function Home() {
           </div>
       </div>
       <div>
-        <Footer/>
+        <Footer supportPage={props.supportPage} change={props.change}/>
       </div>
     </div>
   )

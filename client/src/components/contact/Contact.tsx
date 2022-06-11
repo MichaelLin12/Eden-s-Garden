@@ -4,7 +4,7 @@ import Navbar from '../navbar/navbar'
 import Footer from '../footer/Footer'
 import { FaTwitter,FaSnapchat,FaFacebook,FaInstagram,FaYoutube,FaLinkedin,FaPhoneAlt } from 'react-icons/fa';
 
-export default function Contact() {
+export default function Contact(props:{supportPage:string, change:any}) {
   return (
     <div>
         <div className='top'>
@@ -51,7 +51,7 @@ export default function Contact() {
             </div>
         </div>
         <div>
-            <Footer/>
+            <Footer supportPage={props.supportPage} change={props.change}/>
         </div>
     </div>
   )

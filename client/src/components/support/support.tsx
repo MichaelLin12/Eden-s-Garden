@@ -8,8 +8,8 @@ import Volunteer from '../volunteer/Volunteer'
 import Intern from '../intern/Intern'
 import Job from '../job/Job'
 
-export default function Support() {
-  const [page, setPage]:[String,Function] = useState('Donate');
+export default function Support(props:{supportPage:string, change:any}) {
+  const [page, setPage]:[String,Function] = useState(props.supportPage);
 
   const onClick:Function = (e:any)=>{
     console.log(e.target.text,typeof(e));
@@ -50,7 +50,7 @@ export default function Support() {
         </div>
       </div>
       <div>
-        <Footer/>
+        <Footer supportPage={props.supportPage} change={props.change}/>
       </div>
     </div>
   )

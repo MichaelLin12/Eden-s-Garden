@@ -3,7 +3,7 @@ import './learn.css'
 import Navbar from '../navbar/navbar'
 import Footer from '../footer/Footer'
 
-export default function Learn() {
+export default function Learn(props:{supportPage:string, change:any}) {
   return (
     <div>
         <div className='bar'>
@@ -79,7 +79,7 @@ export default function Learn() {
             </div>
         </div>
         <div>
-            <Footer/>
+            <Footer supportPage={props.supportPage} change={props.change}/>
         </div>
     </div>
   )
