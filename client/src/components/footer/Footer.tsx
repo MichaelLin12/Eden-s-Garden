@@ -9,16 +9,16 @@ export default function Footer() {
     <div className='footer'>
         <div className='links'>
             <div className='list-one'>
-                <div><Link to={'/support'} style={{textDecoration:'none',color:'#ffffff'}}>Donate</Link></div>
-                <div><Link to={'/events'} style={{textDecoration:'none',color:'#ffffff'}}>Events</Link></div>
-                <div><Link to={'/learn'} style={{textDecoration:'none',color:'#ffffff'}}>Our Story</Link></div>
-                <div><Link to={'/learn'} style={{textDecoration:'none',color:'#ffffff'}}>Our Mission</Link></div>
+                <div><a href={'/support'} style={{textDecoration:'none',color:'#ffffff'}}>Donate</a></div>
+                <div><a href={'/events'} style={{textDecoration:'none',color:'#ffffff'}}>Events</a></div>
+                <div><a href={'/learn'} style={{textDecoration:'none',color:'#ffffff'}}>Our Story</a></div>
+                <div><a href={'/learn'} style={{textDecoration:'none',color:'#ffffff'}}>Our Mission</a></div>
             </div>
             <div className='list-two'>
-                <div><Link to={'/learn'} style={{textDecoration:'none',color:'#ffffff'}}>Our Work</Link></div>
-                <div><Link to={'/support'} style={{textDecoration:'none',color:'#ffffff'}}>Volunteer</Link></div>
-                <div><Link to={'/support'} style={{textDecoration:'none',color:'#ffffff'}}>Intern</Link></div>
-                <div><Link to={'/support'} style={{textDecoration:'none',color:'#ffffff'}}>Apply for Job</Link></div>
+                <div><a href={'/learn'} style={{textDecoration:'none',color:'#ffffff'}}>Our Work</a></div>
+                <div><a href={'/support'} style={{textDecoration:'none',color:'#ffffff'}}>Volunteer</a></div>
+                <div><a href={'/support'} style={{textDecoration:'none',color:'#ffffff'}}>Intern</a></div>
+                <div><a href={'/support'} style={{textDecoration:'none',color:'#ffffff'}}>Apply for Job</a></div>
             </div>
             <div className='list-three'>
             <h3>Stay up to date</h3>

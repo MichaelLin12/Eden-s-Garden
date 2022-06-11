@@ -84,6 +84,7 @@
     top:-6.5rem;
     left:8rem;
     cursor: pointer;
+    z-index: -1;
 }
 
 .food-ele3{
