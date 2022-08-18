@@ -7,7 +7,7 @@ export default function Modal(props:any) {
     const { onClickOutside } = props;
     
         useEffect(() => {
-        const handleClickOutside = (event:any) => {
+        const handleClickOutside = (event:Event) => {
             if (ref.current && !ref.current.contains(event.target)) {
                 console.log('Hello World',ref.current,event)
             onClickOutside();

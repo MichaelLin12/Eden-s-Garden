@@ -10,7 +10,7 @@ export default function Cart() {
     let value:number = itemQty[key as keyof typeof itemQty]
     value++;
     setItemQty({...itemQty,[key]:value})
-    console.log(value)
+    //console.log(value)
   }
 
   const decreaseValue = (key:string)=>{
