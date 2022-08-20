@@ -1,6 +1,7 @@
 import React from 'react'
 import './login.css'
 import { Paper } from '@mui/material'
+import { Link } from 'react-router-dom'
 
 export default function Login() {
   return (
@@ -19,7 +20,11 @@ export default function Login() {
             <label className="custom">
                 <input type="password" placeholder="&nbsp;"/>
                 <span className="label">Password</span>
-            </label><br/>
+            </label>
+            <br/>
+            <div className='empty5'>
+              <Link to='/Learn' className='empty5Link'> Help Me</Link>
+            </div>
             <div className='empty2'>
               <button className='initialize'>Login</button>
             </div>

@@ -23,7 +23,7 @@
 
 .buttons{
     margin-top: 0.4rem;
-    margin-left: 1rem;
+    margin-left: 0rem;
     width: 100%;
     height: 2rem;
     display: flex;
@@ -31,7 +31,7 @@
 }
 
 .buttons div{
-    flex: 1;
+    flex: 1.5;
 }
 
 .info-box-wrapper{

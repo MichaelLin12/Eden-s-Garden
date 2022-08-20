@@ -75,8 +75,12 @@
     border-bottom: 2px solid white;
     width: 200px;
     font-size: 14px;
-    outline: none;
     color: white;
+    outline: none;
+}
+
+.custom input:focus{
+    outline: none;
 }
 
 .custom .label {
@@ -135,6 +139,19 @@
     height: fit-content;
     margin-top: 2rem;
     text-align: center;
+}
+
+.empty5{
+    display: flex;
+    height: fit-content;
+    flex-direction: column;
+}
+
+.empty5Link{
+    color: white;
+    cursor: default;
+    text-decoration: none;
+    text-align: end;
 }
 
 

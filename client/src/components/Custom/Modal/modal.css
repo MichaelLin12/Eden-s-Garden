@@ -1,0 +1,12 @@
+
+
+.model-more div{
+    white-space: nowrap;
+    width: 100%;
+}
+
+.model-more div a{
+    text-decoration: none;
+    color: #223b05;
+    background-color: #223b05;
+}

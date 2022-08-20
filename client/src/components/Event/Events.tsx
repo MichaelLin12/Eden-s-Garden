@@ -5,7 +5,7 @@ import {MdLocationOn} from 'react-icons/md'
 import {AiFillCalendar} from 'react-icons/ai'
 import {RiMoneyDollarCircleFill} from 'react-icons/ri'
 import {FiMoreVertical} from 'react-icons/fi'
-import Modal from '../Modal/Modal'
+import Modal from '../Custom/Modal/Modal'
 import { useNavigate } from "react-router-dom";
 
 export default function Event() {

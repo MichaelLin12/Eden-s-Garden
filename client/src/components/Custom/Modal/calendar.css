@@ -1,16 +1,16 @@
 @font-face {
     font-family: futura-button;
-    src: url('../../fonts/futura/Futura\ Bold\ font.ttf');
+    src: url('../../../fonts/futura/Futura\ Bold\ font.ttf');
 }
 
 @font-face {
 font-family: futura-content;
-src: url('../../fonts/futura/Futura\ Light\ font.ttf');
+src: url('../../../fonts/futura/Futura\ Light\ font.ttf');
 }
 
 @font-face {
 font-family: futura-title;
-src: url('../../fonts/futura/Futura\ Bold\ font.ttf');
+src: url('../../../fonts/futura/Futura\ Bold\ font.ttf');
 }
 
 .react-calendar {

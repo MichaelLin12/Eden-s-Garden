@@ -1,6 +1,22 @@
 import React,{useRef,useEffect} from 'react'
 import Calendar from 'react-calendar'
 import './calendar.css'
+import styled from 'styled-components'
+import { Link } from 'react-router-dom'
+
+const ModalInfoBox = styled.div`
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 8px;
+    position: absolute;
+    width: fit-content;
+    left: 0px;
+`
+const ModalMore = styled.div`
+    display: flex;
+    flex-direction: column;
+    width: 5rem;
+`
 
 export default function Modal(props:any) {
     const ref:{current:any} = useRef(null);
@@ -9,11 +25,11 @@ export default function Modal(props:any) {
         useEffect(() => {
         const handleClickOutside = (event:Event) => {
             if (ref.current && !ref.current.contains(event.target)) {
-                console.log('Hello World',ref.current,event)
+                //console.log('Hello World',ref.current,event)
             onClickOutside();
             }
         };
-        console.log('Hello World2',ref.current,typeof(ref.current))
+        //console.log('Hello World2',ref.current,typeof(ref.current))
         document.addEventListener('click', handleClickOutside, true);
         return () => {
             document.removeEventListener('click', handleClickOutside, true);
@@ -31,18 +47,18 @@ export default function Modal(props:any) {
         }else if(props.message === 'calendar'){
             return(
                 <div>
-                    <div className='modal-calendar'>
+                    <div>
                         <Calendar value={new Date()}/>
                     </div>
                 </div>
             )
         }else if(props.message === 'more'){
             return(
-                <div className='model-more'>
-                    <div><a href='#'>Volunteer</a></div>
-                    <div><a href='#'>Learn More</a></div>
-                    <div><a href='#'>Spread the Word</a></div>
-                </div>
+                <ModalMore>
+                    <div><Link to='/' style={{'textDecoration':'none','color':'#223b05'}}>Volunteer</Link></div>
+                    <div><Link to='/' style={{'textDecoration':'none','color':'#223b05'}}>Learn More</Link></div>
+                    <div><Link to='/' style={{'textDecoration':'none','color':'#223b05'}}>Spread the Word</Link></div>
+                </ModalMore>
             )
         }
     }
@@ -50,8 +66,8 @@ export default function Modal(props:any) {
         return null;
 
     return (
-        <div ref={ref} className='info-box' style={{backgroundColor:props.background,top:props.top,left:'0px'}}>
+        <ModalInfoBox ref={ref} className='info-box' style={{'backgroundColor':props.background,'top':props.top}}>
             {info()}
-        </div>
+        </ModalInfoBox>
     )
 }

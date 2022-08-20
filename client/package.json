@@ -57,6 +57,7 @@
   },
   "devDependencies": {
     "@types/react": "^18.0.12",
-    "@types/react-calendar": "^3.5.1"
+    "@types/react-calendar": "^3.5.1",
+    "@types/styled-components": "^5.1.26"
   }
 }
