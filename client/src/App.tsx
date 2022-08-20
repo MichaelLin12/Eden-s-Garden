@@ -8,6 +8,7 @@ import Events from './components/events/Events';
 import Store from './components/store/Store'
 import ProtectedRoute from './ProtectedRoute';
 import {Routes,Route} from 'react-router-dom'
+import Profile from './components/userProfile/UserProfile'
 
 
 function App() {
@@ -30,6 +31,10 @@ function App() {
                                         <Store supportPage={supportPage} change={setSupportPage}/>
                                       </ProtectedRoute>
                                       }/>
+        <Route path='/profile' element={<ProtectedRoute func={checkAuthentication}>
+                                <Profile/>
+                              </ProtectedRoute>
+                              }/>
       </Routes>
     </div>
   );
