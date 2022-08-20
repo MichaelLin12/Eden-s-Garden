@@ -25,13 +25,13 @@ export default function Event() {
         <div className='buttons-div'>
           <div className='info-box-wrapper'>
             <button className='event-modal' onClick={() => {setShowInfoLocation(true)}}><MdLocationOn size={28}/></button>
-            <Modal show={showInfoLocation} onClickOutside={() => {setShowInfoLocation(false)}} message={'location'} top={'27px'} background='#ffffff'/>
+            <Modal show={showInfoLocation} onClickOutside={() => {setShowInfoLocation(false)}} message={'location'} top={'27px'} backgroundColor='#ffffff'/>
           </div>
         </div>
         <div className='buttons-div'>
           <div className='info-box-wrapper'>
             <button className='event-modal' onClick={() => {setShowInfoCalendar(true)}}><AiFillCalendar size={28}/></button>
-            <Modal show={showInfoCalendar} onClickOutside={() => {setShowInfoCalendar(false)}} message={'calendar'} top={'34px'} background='#ffffff'/>
+            <Modal show={showInfoCalendar} onClickOutside={() => {setShowInfoCalendar(false)}} message={'calendar'} top={'34px'} backgroundColor='#ffffff'/>
           </div>
         </div>
         <div className='buttons-div'>
@@ -42,7 +42,7 @@ export default function Event() {
         <div className='buttons-div'>
           <div className='info-box-wrapper'>
             <button className='event-modal' onClick={() => {setShowInfoMore(true)}}><FiMoreVertical size={28}/></button>
-            <Modal show={showInfoMore} onClickOutside={() => {setShowInfoMore(false)}} message={'more'} top={'34px'} background='#ffffff'/>
+            <Modal show={showInfoMore} onClickOutside={() => {setShowInfoMore(false)}} message={'more'} top={'34px'} backgroundColor='#ffffff'/>
           </div>
         </div>
       </div>

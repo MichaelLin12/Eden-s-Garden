@@ -11,14 +11,15 @@ const ModalInfoBox = styled.div`
     position: absolute;
     width: fit-content;
     left: 0px;
-`
+    background-color: ${(props:any)=>props.backgroundColor};
+`;
 const ModalMore = styled.div`
     display: flex;
     flex-direction: column;
     width: 5rem;
-`
+`;
 
-export default function Modal(props:any) {
+export default function Modal(props:{message:string, show:boolean,onClickOutside:Function,backgroundColor:string,top:string}) {
     const ref:{current:any} = useRef(null);
     const { onClickOutside } = props;
     
@@ -66,7 +67,7 @@ export default function Modal(props:any) {
         return null;
 
     return (
-        <ModalInfoBox ref={ref} className='info-box' style={{'backgroundColor':props.background,'top':props.top}}>
+        <ModalInfoBox ref={ref} className='info-box' style={{'backgroundColor':props.backgroundColor,'top':props.top}}>
             {info()}
         </ModalInfoBox>
     )
