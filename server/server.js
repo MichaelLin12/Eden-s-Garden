@@ -2,8 +2,8 @@ const express = require('express')
 const app = express()
 const port = 5000
 
-app.get('/', (req, res) => {
-  res.send({"start":["UserOne","UserTwo","UserThree"]})
+app.get('/api', (req, res) => {
+  res.send({"users":["UserOne","UserTwo",]})
 })
 
 app.listen(port, () => {

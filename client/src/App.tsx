@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React,{useState,useEffect} from 'react';
 import Home from './components/landing/Home'
 import Login from './components/login/Login'
 import Learn from './components/learn/learn'
@@ -13,6 +13,18 @@ import Profile from './components/userProfile/UserProfile'
 
 function App() {
   const [supportPage, setSupportPage] = useState('Donate')
+  const [backendData,setBackendData] = useState({"users":null})
+
+  useEffect(()=>{
+    fetch("/api").then(
+      response => response.json()
+    ).then(
+      data => {
+        console.log(data)
+        setBackendData(data)
+      }
+    )
+  },[])
 
   const checkAuthentication = ()=>{
     return true;
